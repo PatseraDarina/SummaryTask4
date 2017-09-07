@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="SummaryTask:war">
+  <artifact type="war" name="periodicals:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="Periodicals.war">
-      <element id="artifact" artifact-name="SummaryTask:war exploded" />
+      <element id="artifact" artifact-name="periodicals:war exploded" />
     </root>
   </artifact>
 </component>

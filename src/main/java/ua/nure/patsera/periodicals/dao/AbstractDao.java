@@ -1,6 +1,7 @@
 package ua.nure.patsera.periodicals.dao;
 
 import org.apache.log4j.Logger;
+import ua.nure.patsera.periodicals.dao.entityTransformation.ResultSetTransformation;
 import ua.nure.patsera.periodicals.model.BaseEntity;
 
 import java.sql.Connection;
@@ -10,9 +11,9 @@ import java.sql.SQLException;
 /**
  * Created by Дарина on 03.09.2017.
  */
-public  class AbstractDao<T extends BaseEntity, PK> implements GenericDao<T, PK> {
+public abstract class AbstractDao<T extends BaseEntity, PK> implements GenericDao<T, PK> {
 
-  // public static final Logger LOGGER = Logger.getLogger(AbstractDao.class);
+    protected final ResultSetTransformation resultSetTransformation;
 
     protected abstract PreparedStatement prepareCreateQuery(Connection connection, T entity) throws SQLException;
 
@@ -22,6 +23,9 @@ public  class AbstractDao<T extends BaseEntity, PK> implements GenericDao<T, PK>
 
     protected abstract PreparedStatement prepareDeleteQuery(Connection connection, PK key) throws SQLException;
 
+    public AbstractDao(ResultSetTransformation<T> resultSetTransformation) {
+        this.resultSetTransformation = resultSetTransformation;
+    }
 
     @Override
     public PK create(Connection connection, T objectToCreate) throws SQLException {
