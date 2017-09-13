@@ -6,6 +6,7 @@ import ua.nure.patsera.periodicals.model.BaseEntity;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -13,7 +14,7 @@ import java.sql.SQLException;
  */
 public abstract class AbstractDao<T extends BaseEntity, PK> implements GenericDao<T, PK> {
 
-    protected final ResultSetTransformation resultSetTransformation;
+    protected final ResultSetTransformation<T> resultSetTransformation;
 
     protected abstract PreparedStatement prepareCreateQuery(Connection connection, T entity) throws SQLException;
 
@@ -39,16 +40,20 @@ public abstract class AbstractDao<T extends BaseEntity, PK> implements GenericDa
     @Override
     public T read(Connection connection, PK id) throws SQLException {
         PreparedStatement preparedStatement = prepareReadQuery(connection, id);
-
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSetTransformation.getDBObject(resultSet);
     }
 
     @Override
-    public void update(Connection connection, T objectToUpdate) {
-
+    public void update(Connection connection, T objectToUpdate) throws SQLException {
+        PreparedStatement preparedStatement = prepareUpdateQuery(connection, objectToUpdate);
+        preparedStatement.executeUpdate();
     }
 
     @Override
-    public void delete(Connection connection, T objectToDelete) {
+    public void delete(Connection connection, PK id) throws SQLException {
+        PreparedStatement preparedStatement = prepareDeleteQuery(connection, id);
+        preparedStatement.executeUpdate();
 
     }
 }

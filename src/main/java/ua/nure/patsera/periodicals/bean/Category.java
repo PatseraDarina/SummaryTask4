@@ -28,7 +28,4 @@ public class Category extends BaseEntity<Integer> implements Serializable {
         this.name = name;
     }
 
-    public String getReadAllSql() {
-       return getProperties().getProperty("sql." + this.getClass().getSimpleName().toLowerCase() + ".readAll");
-    }
 }

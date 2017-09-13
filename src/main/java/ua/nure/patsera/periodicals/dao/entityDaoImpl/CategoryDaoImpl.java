@@ -1,10 +1,10 @@
 package ua.nure.patsera.periodicals.dao.entityDaoImpl;
 
-import org.apache.log4j.Logger;
 import ua.nure.patsera.periodicals.bean.Category;
 import ua.nure.patsera.periodicals.dao.AbstractDao;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.ICategoryDao;
 import ua.nure.patsera.periodicals.dao.entityTransformation.ResultSetTransformation;
+import ua.nure.patsera.periodicals.dao.utility.QueryStorage;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,9 +16,6 @@ import java.util.List;
  * Created by Дарина on 07.09.2017.
  */
 public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements ICategoryDao {
-    private static final Logger LOGGER = Logger.getLogger(CategoryDaoImpl.class);
-
-    Category category = new Category();
 
     public CategoryDaoImpl(ResultSetTransformation<Category> resultSetTransformation) {
         super(resultSetTransformation);
@@ -26,7 +23,7 @@ public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements I
 
     @Override
     protected PreparedStatement prepareCreateQuery(Connection connection, Category entity) throws SQLException {
-        String query = category.getCreateSql();
+        String query = QueryStorage.CREATE_CATEGORY;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(2, entity.getName());
         return preparedStatement;
@@ -34,7 +31,7 @@ public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements I
 
     @Override
     protected PreparedStatement prepareReadQuery(Connection connection, Integer key) throws SQLException {
-        String query = category.getReadSql();
+        String query = QueryStorage.READ_CATEGORY_BY_ID;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setInt(1, key);
         return preparedStatement;
@@ -42,7 +39,7 @@ public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements I
 
     @Override
     protected PreparedStatement prepareUpdateQuery(Connection connection, Category entity) throws SQLException {
-        String query = category.getUpdateSql();
+        String query = QueryStorage.UPDATE_CATEGORY;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(2, entity.getName());
         return preparedStatement;
@@ -50,12 +47,11 @@ public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements I
 
     @Override
     protected PreparedStatement prepareDeleteQuery(Connection connection, Integer key) throws SQLException {
-        String query = category.getDeleteSql();
+        String query = QueryStorage.DELETE_CATEGORY;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setInt(1, key);
         return preparedStatement;
     }
-
 
     @Override
     public List<Category> readAll(Connection connection) throws SQLException {
@@ -65,7 +61,7 @@ public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements I
     }
 
     private PreparedStatement prepareReadAllQuery(Connection connection) throws SQLException {
-        String query = category.getReadAllSql();
+        String query = QueryStorage.READ_ALL_CATEGORIES;
         return connection.prepareCall(query);
     }
 

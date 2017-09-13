@@ -44,13 +44,12 @@ public interface GenericDao<T extends BaseEntity, PK>  {
      * @param objectToUpdate consists of new changed data that
      *                       will be stored into database
      */
-    void update(Connection connection, T objectToUpdate);
+    void update(Connection connection, T objectToUpdate) throws SQLException;
 
     /**
      * Remove an object from persistent storage in the database
      *
-     * @param objectToDelete consists of data that
-     *                       will be deleted from database
+     * @param id key on which occurs deleting
      */
-    void delete(Connection connection, T objectToDelete);
+    void delete(Connection connection, PK id) throws SQLException;
 }

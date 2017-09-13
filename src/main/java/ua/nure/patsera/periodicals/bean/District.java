@@ -27,4 +27,12 @@ public class District extends BaseEntity<Integer> implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getIdCity() {
+        return idCity;
+    }
+
+    public void setIdCity(int idCity) {
+        this.idCity = idCity;
+    }
 }

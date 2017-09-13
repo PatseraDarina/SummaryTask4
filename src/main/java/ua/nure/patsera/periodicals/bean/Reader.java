@@ -12,29 +12,48 @@ public class Reader extends BaseEntity<Integer> implements Serializable {
     private String middleName;
     private String lastName;
     private String phone;
+    private String street;
     private int flatNumber;
     private String houseNumber;
-    private int idStreet;
     private String password;
-    private String email;
+    private int idDistrict;
 
     public Reader() {
     }
 
-    public Reader(String firstName, String middleName, String lastName, String phone, int flatNumber, String houseNumber, int idStreet, String password, String email) {
-
+    public Reader(String firstName, String middleName, String lastName, String phone,
+                  int flatNumber, String houseNumber, String password, String email, String street, int idDistrict) {
+        this.street = street;
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.phone = phone;
         this.flatNumber = flatNumber;
         this.houseNumber = houseNumber;
-        this.idStreet = idStreet;
         this.password = password;
         this.email = email;
+        this.idDistrict = idDistrict;
     }
 
-    public String getFirstName() {
+    public int getIdDistrict() {
+        return idDistrict;
+    }
+
+    public void setIdDistrict(int idDistrict) {
+        this.idDistrict = idDistrict;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    private String email;
+
+       public String getFirstName() {
 
         return firstName;
     }
@@ -81,14 +100,6 @@ public class Reader extends BaseEntity<Integer> implements Serializable {
 
     public void setHouseNumber(String houseNumber) {
         this.houseNumber = houseNumber;
-    }
-
-    public int getIdStreet() {
-        return idStreet;
-    }
-
-    public void setIdStreet(int idStreet) {
-        this.idStreet = idStreet;
     }
 
     public String getPassword() {

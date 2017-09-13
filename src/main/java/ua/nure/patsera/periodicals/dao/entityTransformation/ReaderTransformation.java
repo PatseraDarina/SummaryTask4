@@ -38,9 +38,10 @@ public class ReaderTransformation implements ResultSetTransformation<Reader> {
         reader.setPhone(resultSet.getString(5));
         reader.setFlatNumber(resultSet.getInt(6));
         reader.setHouseNumber(resultSet.getString(7));
-        reader.setIdStreet(resultSet.getInt(8));
-        reader.setPassword(resultSet.getString(9));
-        reader.setEmail(resultSet.getString(10));
+        reader.setPassword(resultSet.getString(8));
+        reader.setEmail(resultSet.getString(9));
+        reader.setIdDistrict(resultSet.getInt(10));
+        reader.setStreet(resultSet.getString(11));
         return reader;
     }
 }
