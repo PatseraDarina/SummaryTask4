@@ -11,7 +11,7 @@
     </appender>
 
     <appender name="RollingFileAppender" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="application.log"/>
+        <param name="File" value="src/main/app.log"/>
         <param name="MaxFileSize" value="10MB"/>
         <param name="MaxBackupIndex" value="10"/>
         <param name="Encoding" value="UTF-8"/>

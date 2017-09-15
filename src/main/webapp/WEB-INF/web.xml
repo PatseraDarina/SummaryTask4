@@ -4,10 +4,23 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>PeriodicalsDBLog4j</display-name>
+    <display-name>Periodicals</display-name>
     <welcome-file-list>
-        <welcome-file>register.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
+    <servlet>
+        <description>Show Register Info</description>
+        <servlet-name>ShowRegisterInfoServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.ShowRegisterInfoServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowRegisterInfoServlet</servlet-name>
+        <url-pattern>/showRegisterInfo</url-pattern>
+    </servlet-mapping>
+
     <context-param>
         <param-name>dbUser</param-name>
         <param-value>root</param-value>

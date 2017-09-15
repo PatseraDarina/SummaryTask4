@@ -69,7 +69,7 @@ public class DistrictDaoImpl extends AbstractDao<District, Integer> implements I
     }
 
     private PreparedStatement prepareReadAllQuery(Connection connection) throws SQLException {
-        String query = QueryStorage.READ_ALL_CITIES;
+        String query = QueryStorage.READ_ALL_DISTRICT;
         return connection.prepareStatement(query);
     }
 

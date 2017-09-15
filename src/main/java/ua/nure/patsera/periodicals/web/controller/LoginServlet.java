@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import ua.nure.patsera.periodicals.bean.Reader;
 import ua.nure.patsera.periodicals.dto.LoginDto;
 import ua.nure.patsera.periodicals.exceptions.AuthorizationException;
+import ua.nure.patsera.periodicals.exceptions.Messages;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 import ua.nure.patsera.periodicals.service.ReaderService;
 
@@ -32,6 +33,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(true);
         LoginDto loginDto = getLoginDto(request);
+        boolean isExist = true;
         Reader reader = null;
         try {
             reader = readerService.login(loginDto);
@@ -42,8 +44,14 @@ public class LoginServlet extends HttpServlet {
         } catch (TransactionInterruptedException e) {
             LOGGER.warn(e.getMessage());
         }
-        request.getSession().setAttribute(ServletAttributes.READER, reader);
-        response.sendRedirect(ServletAttributes.JSP_INDEX);
+        if (reader != null) {
+            request.getSession().setAttribute(ServletAttributes.READER, reader);
+            response.sendRedirect(ServletAttributes.JSP_PERCONAL_CABINET);
+        } else {
+            isExist = false;
+            session.setAttribute(ServletAttributes.IS_EXIST, isExist);
+            request.getRequestDispatcher(ServletAttributes.JSP_INDEX).include(request, response);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

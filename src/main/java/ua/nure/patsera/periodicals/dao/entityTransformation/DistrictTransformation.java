@@ -13,9 +13,9 @@ import java.util.List;
 public class DistrictTransformation implements ResultSetTransformation<District> {
     @Override
     public District getDBObject(ResultSet resultSet) throws SQLException {
-        District district = new District();
+        District district = null;
         while (resultSet.next()) {
-            parseDistrict(resultSet);
+            district = parseDistrict(resultSet);
         }
         return district;
     }

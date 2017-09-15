@@ -21,9 +21,8 @@ public interface GenericDao<T extends BaseEntity, PK>  {
      *
      * @param objectToCreate    will be add into database
      *
-     * @return id that will be generate for {@code objectToCreate}
      */
-    PK create(Connection connection, T objectToCreate) throws SQLException;
+    void create(Connection connection, T objectToCreate) throws SQLException;
 
     /**
      * Retrieve an object that was previously persisted to the database using

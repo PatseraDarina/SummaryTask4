@@ -6,16 +6,14 @@ import ua.nure.patsera.periodicals.dao.entityDaoInterface.IReaderDao;
 import ua.nure.patsera.periodicals.dao.entityTransformation.ResultSetTransformation;
 import ua.nure.patsera.periodicals.dao.utility.QueryStorage;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.List;
 
 /**
  * Created by Дарина on 08.09.2017.
  */
 public class ReaderDaoImpl extends AbstractDao<Reader, Integer> implements IReaderDao {
+
     public ReaderDaoImpl(ResultSetTransformation<Reader> resultSetTransformation) {
         super(resultSetTransformation);
     }
@@ -37,7 +35,7 @@ public class ReaderDaoImpl extends AbstractDao<Reader, Integer> implements IRead
     @Override
     protected PreparedStatement prepareCreateQuery(Connection connection, Reader entity) throws SQLException {
         String query = QueryStorage.CREATE_READER;
-        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
         preparedStatement.setString(1, entity.getFirstName());
         preparedStatement.setString(2, entity.getMiddleName());
         preparedStatement.setString(3, entity.getLastName());
@@ -46,6 +44,8 @@ public class ReaderDaoImpl extends AbstractDao<Reader, Integer> implements IRead
         preparedStatement.setString(6, entity.getHouseNumber());
         preparedStatement.setString(7, entity.getPassword());
         preparedStatement.setString(8, entity.getEmail());
+        preparedStatement.setInt(9, entity.getIdDistrict());
+        preparedStatement.setString(10, entity.getStreet());
         return preparedStatement;
     }
 
@@ -89,8 +89,8 @@ public class ReaderDaoImpl extends AbstractDao<Reader, Integer> implements IRead
    private PreparedStatement prepareReadByLoginQuery(Connection connection, String email, String password) throws SQLException {
         String query = QueryStorage.READ_BY_LOGIN_DATA_READER;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(9, email);
-        preparedStatement.setString(8, password);
+        preparedStatement.setString(1, email);
+       preparedStatement.setString(2, password);
         return preparedStatement;
    }
 }

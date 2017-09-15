@@ -18,10 +18,10 @@ public class CategoryService {
         this.categoryDao = categoryDao;
     }
 
-    public void addCategory(Category category) throws TransactionInterruptedException {
+    /*public void addCategory(Category category) throws TransactionInterruptedException {
         transactionManager.doTransaction(connection ->
                 categoryDao.create(connection, category));
-    }
+    }*/
 
     public static void main(String[] args) {
 

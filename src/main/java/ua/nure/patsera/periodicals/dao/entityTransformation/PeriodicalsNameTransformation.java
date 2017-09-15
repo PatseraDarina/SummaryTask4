@@ -13,9 +13,9 @@ import java.util.List;
 public class PeriodicalsNameTransformation implements ResultSetTransformation<PeriodicalsName> {
     @Override
     public PeriodicalsName getDBObject(ResultSet resultSet) throws SQLException {
-        PeriodicalsName periodicalsName = new PeriodicalsName();
+        PeriodicalsName periodicalsName = null;
         while (resultSet.next()) {
-            parsePeriodicalsName(resultSet);
+            periodicalsName = parsePeriodicalsName(resultSet);
         }
         return periodicalsName;
     }

@@ -25,6 +25,7 @@ D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\dao\
 D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\dao\entityTransformation\CategoryTransformation.java
 D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\bean\Delivery.java
 D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\dao\entityDaoInterface\ICityDao.java
+D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\web\controller\ShowRegisterInfoServlet.java
 D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\bean\District.java
 D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\exceptions\TransactionInterruptedException.java
 D:\Java\IdeaProjects\SummaryTask4\src\main\java\ua\nure\patsera\periodicals\web\controller\LoginServlet.java

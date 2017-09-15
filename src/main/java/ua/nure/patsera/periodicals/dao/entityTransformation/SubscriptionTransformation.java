@@ -13,9 +13,9 @@ import java.util.List;
 public class SubscriptionTransformation implements ResultSetTransformation<Subscription> {
     @Override
     public Subscription getDBObject(ResultSet resultSet) throws SQLException {
-        Subscription subscription = new Subscription();
+        Subscription subscription = null;
         while (resultSet.next()) {
-            parseSubscription(resultSet);
+            subscription = parseSubscription(resultSet);
         }
         return subscription;
     }

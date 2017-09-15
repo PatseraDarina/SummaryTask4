@@ -13,6 +13,14 @@
     <title>Periodicals Home</title>
   </head>
   <body>
-      Hello! Home page
+        <form action="/login" method="POST">
+          <p>Email<input type="email" name="email" required="required"></p>
+          <p>Password<input type="password" name="password" required="required"></p>
+            <p> <input type="submit" value="Sign In"></p>
+      </form>
+        <c:if test="${sessionScope.isExist == false}">
+           <p><c:out value="${loginError}"/></p>
+        </c:if>
+  <p> <a href="/showRegisterInfo">Sign up</a></p>
   </body>
 </html>

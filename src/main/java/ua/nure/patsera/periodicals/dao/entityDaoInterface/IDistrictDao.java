@@ -10,4 +10,5 @@ import java.sql.SQLException;
  */
 public interface IDistrictDao extends IBaseEntityDao<District, Integer> {
     District getDistrictByName(Connection connection, String name) throws SQLException;
+
 }

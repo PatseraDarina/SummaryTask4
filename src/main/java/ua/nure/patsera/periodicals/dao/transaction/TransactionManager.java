@@ -36,6 +36,12 @@ public class TransactionManager {
             exceptionMessage = e.getMessage();
             LOGGER.error(e.getMessage());
             exceptionMessage = rollback(connection, exceptionMessage);
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         throw new TransactionInterruptedException(exceptionMessage);
     }

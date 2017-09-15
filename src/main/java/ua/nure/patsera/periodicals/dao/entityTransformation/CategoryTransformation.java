@@ -14,9 +14,9 @@ import java.util.List;
 public class CategoryTransformation implements ResultSetTransformation<Category> {
     @Override
     public Category getDBObject(ResultSet resultSet) throws SQLException {
-       Category category = new Category();
+       Category category = null;
        while (resultSet.next()) {
-           parseCategory(resultSet);
+           category = parseCategory(resultSet);
        }
        return category;
     }

@@ -29,12 +29,9 @@ public abstract class AbstractDao<T extends BaseEntity, PK> implements GenericDa
     }
 
     @Override
-    public PK create(Connection connection, T objectToCreate) throws SQLException {
-        PK generatedId;
+    public void create(Connection connection, T objectToCreate) throws SQLException {
         PreparedStatement preparedStatement = prepareCreateQuery(connection, objectToCreate);
         preparedStatement.executeUpdate();
-        generatedId = (PK) new Integer(preparedStatement.getGeneratedKeys().getInt(1));
-        return generatedId;
     }
 
     @Override

@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import ua.nure.patsera.periodicals.dto.RegistrationDto;
 import ua.nure.patsera.periodicals.exceptions.RegistrationException;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
+import ua.nure.patsera.periodicals.service.DistrictService;
 import ua.nure.patsera.periodicals.service.ReaderService;
 
 import javax.servlet.ServletException;
@@ -18,7 +19,7 @@ import java.io.IOException;
 /**
  * Created by Дарина on 11.09.2017.
  */
-@WebServlet(name = "RegistrationServlet", urlPatterns = "/RegistrationServlet")
+@WebServlet(name = "RegistrationServlet", urlPatterns = "/registration")
 public class RegistrationServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(RegistrationServlet.class);
     private ReaderService readerService;
@@ -29,21 +30,22 @@ public class RegistrationServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
+        doGet(request, response);
+    }
 
-        HttpSession session = request.getSession();
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession(true);
+        response.setContentType("text/html");
+        request.setCharacterEncoding("UTF-8");
         RegistrationDto registrationDto = getRegistrationDto(request);
         try {
             readerService.register(registrationDto);
+            session.setAttribute(ServletAttributes.REGISTRATION_DTO, registrationDto);
         } catch (RegistrationException e) {
             session.setAttribute(ServletAttributes.REGISTRATION_NOT_SUCCESS, e.getMessage());
             LOGGER.warn(e.getMessage());
         }
-        response.sendRedirect(ServletAttributes.JSP_INDEX);
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.sendRedirect(ServletAttributes.JSP_PERCONAL_CABINET);
     }
 
     private RegistrationDto getRegistrationDto(HttpServletRequest request) {
@@ -58,6 +60,7 @@ public class RegistrationServlet extends HttpServlet {
         registrationDto.setHouseNumber(request.getParameter(ServletAttributes.READER_HOUSE_NUMBER));
         registrationDto.setPassword(request.getParameter(ServletAttributes.READER_PASSWORD));
         registrationDto.setPhone(request.getParameter(ServletAttributes.READER_PHONE));
+        registrationDto.setStreet(request.getParameter(ServletAttributes.READER_STREET));
         registrationDto.setConfirmPassword(request.getParameter(ServletAttributes.READER_CONFIRM_PASSWORD));
         return registrationDto;
     }

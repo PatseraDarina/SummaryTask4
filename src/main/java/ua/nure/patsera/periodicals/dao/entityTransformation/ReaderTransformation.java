@@ -13,9 +13,9 @@ import java.util.List;
 public class ReaderTransformation implements ResultSetTransformation<Reader> {
     @Override
     public Reader getDBObject(ResultSet resultSet) throws SQLException {
-        Reader reader = new Reader();
+        Reader reader = null;
         while (resultSet.next()) {
-            parseReader(resultSet);
+            reader = parseReader(resultSet);
         }
         return reader;
     }

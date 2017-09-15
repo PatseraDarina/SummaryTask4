@@ -29,6 +29,7 @@ ua\nure\patsera\periodicals\bean\City.class
 ua\nure\patsera\periodicals\dao\transaction\TransactionManager.class
 ua\nure\patsera\periodicals\dao\entityTransformation\TopicTransformation.class
 ua\nure\patsera\periodicals\dao\transaction\Operation.class
+ua\nure\patsera\periodicals\web\controller\ShowRegisterInfoServlet.class
 ua\nure\patsera\periodicals\bean\Reader.class
 ua\nure\patsera\periodicals\dto\RegistrationDto.class
 ua\nure\patsera\periodicals\bean\Periodicity.class

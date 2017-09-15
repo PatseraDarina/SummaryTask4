@@ -13,9 +13,9 @@ import java.util.List;
 public class TopicTransformation implements ResultSetTransformation<Topic> {
     @Override
     public Topic getDBObject(ResultSet resultSet) throws SQLException {
-        Topic topic = new Topic();
+        Topic topic = null;
         while (resultSet.next()) {
-            parseTopic(resultSet);
+            topic = parseTopic(resultSet);
         }
         return topic;
     }

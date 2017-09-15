@@ -5,12 +5,22 @@ package ua.nure.patsera.periodicals.web.controller.listeners;
  */
 
 import org.apache.log4j.Logger;
+import ua.nure.patsera.periodicals.bean.City;
+import ua.nure.patsera.periodicals.bean.District;
 import ua.nure.patsera.periodicals.bean.Reader;
+import ua.nure.patsera.periodicals.dao.entityDaoImpl.CityDaoImpl;
+import ua.nure.patsera.periodicals.dao.entityDaoImpl.DistrictDaoImpl;
 import ua.nure.patsera.periodicals.dao.entityDaoImpl.ReaderDaoImpl;
+import ua.nure.patsera.periodicals.dao.entityDaoInterface.ICityDao;
+import ua.nure.patsera.periodicals.dao.entityDaoInterface.IDistrictDao;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.IReaderDao;
+import ua.nure.patsera.periodicals.dao.entityTransformation.CityTransformation;
+import ua.nure.patsera.periodicals.dao.entityTransformation.DistrictTransformation;
 import ua.nure.patsera.periodicals.dao.entityTransformation.ReaderTransformation;
 import ua.nure.patsera.periodicals.dao.entityTransformation.ResultSetTransformation;
 import ua.nure.patsera.periodicals.dao.transaction.TransactionManager;
+import ua.nure.patsera.periodicals.service.CityService;
+import ua.nure.patsera.periodicals.service.DistrictService;
 import ua.nure.patsera.periodicals.service.ReaderService;
 import ua.nure.patsera.periodicals.web.controller.ServletAttributes;
 import ua.nure.patsera.periodicals.dao.utility.*;
@@ -63,20 +73,31 @@ public class AppContextListener implements ServletContextListener {
         dataSourceInitialized();
         connectionPoolInitialized();
         transactionManagerInitialized();
+
         initServices();
     }
 
     private void initServices() {
         initReaderService();
+        initCityService();
     }
 
     private void initReaderService() {
+        ResultSetTransformation<District> districtTransformation = new DistrictTransformation();
+        IDistrictDao districtDao = new DistrictDaoImpl(districtTransformation);
+        DistrictService districtService = new DistrictService(transactionManager, districtDao);
         ResultSetTransformation<Reader> readerTransformation = new ReaderTransformation();
         IReaderDao readerDao = new ReaderDaoImpl(readerTransformation);
-
-        ReaderService readerService = new ReaderService(transactionManager, readerDao);
-
+        ReaderService readerService = new ReaderService(transactionManager, readerDao, districtService);
         servletContext.setAttribute(ServletAttributes.READER_SERVICE, readerService);
+        servletContext.setAttribute(ServletAttributes.DISTRICT_SERVICE, districtService);
+    }
+
+    private void initCityService() {
+        ResultSetTransformation<City> cityTransformation = new CityTransformation();
+        ICityDao cityDao = new CityDaoImpl(cityTransformation);
+        CityService cityService = new CityService(transactionManager, cityDao);
+        servletContext.setAttribute(ServletAttributes.CITY_SERVICE, cityService);
     }
 
     /**

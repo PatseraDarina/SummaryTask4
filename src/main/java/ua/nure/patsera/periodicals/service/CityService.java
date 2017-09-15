@@ -3,6 +3,7 @@ package ua.nure.patsera.periodicals.service;
 import ua.nure.patsera.periodicals.bean.City;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.ICityDao;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.IReaderDao;
+import ua.nure.patsera.periodicals.dao.transaction.Operation;
 import ua.nure.patsera.periodicals.dao.transaction.TransactionManager;
 import ua.nure.patsera.periodicals.exceptions.AuthorizationException;
 import ua.nure.patsera.periodicals.exceptions.Messages;
@@ -10,6 +11,7 @@ import ua.nure.patsera.periodicals.exceptions.RegistrationException;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 import ua.nure.patsera.periodicals.validation.Validator;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -25,8 +27,10 @@ public class CityService implements IService<City> {
     }
 
     public void add(City city) throws TransactionInterruptedException {
-        transactionManager.doTransaction(connection ->
-                cityDao.create(connection, city));
+         transactionManager.doTransaction((Operation<Void>) connection -> {
+             cityDao.create(connection, city);
+             return null;
+         });
     }
 
     @Override
@@ -40,11 +44,12 @@ public class CityService implements IService<City> {
                 cityDao.getCityByName(connection, name)));
     }
 
-
-    private void checkCityData(City city) throws AuthorizationException {
-        if (!Validator.isValidEmail(city.getName())) {
-            throw new AuthorizationException(Messages.INVALID_ADRESS_DATA);
+    public List<City> getAllCity() {
+        try {
+            return transactionManager.doTransaction(cityDao::readAll);
+        } catch (TransactionInterruptedException e) {
+            e.printStackTrace();
         }
+        return null;
     }
-
 }

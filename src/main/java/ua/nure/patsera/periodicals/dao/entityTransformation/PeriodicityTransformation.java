@@ -14,9 +14,9 @@ import java.util.List;
 public class PeriodicityTransformation implements ResultSetTransformation<Periodicity> {
     @Override
     public Periodicity getDBObject(ResultSet resultSet) throws SQLException {
-        Periodicity periodicity = new Periodicity();
+        Periodicity periodicity = null;
         while (resultSet.next()) {
-            parsePeriodicity(resultSet);
+            periodicity = parsePeriodicity(resultSet);
         }
         return periodicity;
     }
