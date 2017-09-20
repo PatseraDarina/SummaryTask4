@@ -3,9 +3,12 @@ package ua.nure.patsera.periodicals.web.controller;
 import org.apache.log4j.Logger;
 import ua.nure.patsera.periodicals.bean.City;
 import ua.nure.patsera.periodicals.bean.District;
+import ua.nure.patsera.periodicals.bean.Periodical;
+import ua.nure.patsera.periodicals.dto.PeriodicalDto;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 import ua.nure.patsera.periodicals.service.CityService;
 import ua.nure.patsera.periodicals.service.DistrictService;
+import ua.nure.patsera.periodicals.service.PeriodicalService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,15 +27,13 @@ public class ShowRegisterInfoServlet extends HttpServlet {
 
     private DistrictService districtService;
     private CityService cityService;
+    private PeriodicalService periodicalService;
 
     @Override
     public void init() throws ServletException {
         districtService = (DistrictService) getServletContext().getAttribute(ServletAttributes.DISTRICT_SERVICE);
         cityService = (CityService) getServletContext().getAttribute(ServletAttributes.CITY_SERVICE);
-    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       // execute(request, response);
+        periodicalService = (PeriodicalService) getServletContext().getAttribute(ServletAttributes.PERIODICAL_SERVICE);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -40,10 +41,18 @@ public class ShowRegisterInfoServlet extends HttpServlet {
     }
 
     private void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<District> districtList = districtService.getAllDistrict();
-        List<City> cityList = cityService.getAllCity();
-        request.setAttribute(ServletAttributes.DISTRICT_LIST, districtList);
-        request.setAttribute(ServletAttributes.CITY_LIST, cityList);
-        request.getRequestDispatcher(ServletAttributes.JSP_REGISTER).forward(request, response);
+        try {
+            request.setCharacterEncoding("UTF-8");
+            List<District> districtList = districtService.getAllDistrict();
+            List<City> cityList = cityService.getAllCity();
+            List<PeriodicalDto> periodicalList = periodicalService.getAllPeriodicalDto();
+            request.setAttribute(ServletAttributes.DISTRICT_LIST, districtList);
+            request.setAttribute(ServletAttributes.CITY_LIST, cityList);
+            request.setAttribute(ServletAttributes.PERIODICAL_LIST, periodicalList);
+            request.getRequestDispatcher(ServletAttributes.JSP_INDEX).forward(request, response);
+        } catch(Exception ex) {
+            request.getRequestDispatcher("/jsp/error.jsp").forward(request, response);
+        }
+
     }
 }

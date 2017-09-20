@@ -14,16 +14,7 @@ public class RegistrationDto {
     private String city;
     private String district;
     private String password;
-    private String confirmPassword;
     private String email;
-
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
-
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
 
     public RegistrationDto() {
     }

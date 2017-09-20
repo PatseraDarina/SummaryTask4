@@ -74,7 +74,7 @@ public class CityDaoImpl extends AbstractDao<City, Integer> implements ICityDao 
     private PreparedStatement prepareGetCityByName(Connection connection, String name) throws SQLException {
         String query = QueryStorage.READ_CITY_BY_NAME;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(2, name);
+        preparedStatement.setString(1, name);
         return preparedStatement;
     }
 }

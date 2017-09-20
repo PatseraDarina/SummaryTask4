@@ -8,42 +8,31 @@ import java.io.Serializable;
  * Created by Дарина on 05.09.2017.
  */
 public class Subscription extends BaseEntity<Integer> implements Serializable {
-    private int idName;
-    private int idPeriodicity;
-    private int idType;
+    private int idPeriodical;
+    private int idReader;
 
     public Subscription() {
     }
 
-    public Subscription(int idName, int idPeriodicity, int idType) {
-
-        this.idName = idName;
-        this.idPeriodicity = idPeriodicity;
-        this.idType = idType;
+    public Subscription(int idPeriodical, int idReader) {
+        this.idPeriodical = idPeriodical;
+        this.idReader = idReader;
     }
 
-    public int getIdName() {
+    public int getIdPeriodical() {
 
-        return idName;
+        return idPeriodical;
     }
 
-    public void setIdName(int idName) {
-        this.idName = idName;
+    public void setIdPeriodical(int idPeriodical) {
+        this.idPeriodical = idPeriodical;
     }
 
-    public int getIdPeriodicity() {
-        return idPeriodicity;
+    public int getIdReader() {
+        return idReader;
     }
 
-    public void setIdPeriodicity(int idPeriodicity) {
-        this.idPeriodicity = idPeriodicity;
-    }
-
-    public int getIdType() {
-        return idType;
-    }
-
-    public void setIdType(int idType) {
-        this.idType = idType;
+    public void setIdReader(int idReader) {
+        this.idReader = idReader;
     }
 }

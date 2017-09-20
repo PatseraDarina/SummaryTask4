@@ -28,6 +28,16 @@ public class DistrictService implements IService<District> {
     }
 
     @Override
+    public void update(District entity) throws TransactionInterruptedException {
+
+    }
+
+    @Override
+    public void delete(int id) throws TransactionInterruptedException {
+
+    }
+
+    @Override
     public boolean contains(String name) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
                 districtDao.getDistrictByName(connection, name)) != null;

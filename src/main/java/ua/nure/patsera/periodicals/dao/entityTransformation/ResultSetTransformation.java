@@ -1,5 +1,7 @@
 package ua.nure.patsera.periodicals.dao.entityTransformation;
 
+import ua.nure.patsera.periodicals.dto.PeriodicalDto;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;

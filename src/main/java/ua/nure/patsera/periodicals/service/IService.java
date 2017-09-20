@@ -8,5 +8,7 @@ import ua.nure.patsera.periodicals.model.BaseEntity;
  */
 public interface IService<T extends BaseEntity> {
     void add(T entity) throws TransactionInterruptedException;
+    void update(T entity) throws TransactionInterruptedException;
+    void delete(int id) throws TransactionInterruptedException;
     boolean contains(String name) throws TransactionInterruptedException;
 }

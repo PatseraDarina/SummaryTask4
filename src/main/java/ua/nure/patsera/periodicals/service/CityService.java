@@ -2,14 +2,9 @@ package ua.nure.patsera.periodicals.service;
 
 import ua.nure.patsera.periodicals.bean.City;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.ICityDao;
-import ua.nure.patsera.periodicals.dao.entityDaoInterface.IReaderDao;
 import ua.nure.patsera.periodicals.dao.transaction.Operation;
 import ua.nure.patsera.periodicals.dao.transaction.TransactionManager;
-import ua.nure.patsera.periodicals.exceptions.AuthorizationException;
-import ua.nure.patsera.periodicals.exceptions.Messages;
-import ua.nure.patsera.periodicals.exceptions.RegistrationException;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
-import ua.nure.patsera.periodicals.validation.Validator;
 
 import java.util.List;
 import java.util.Optional;
@@ -31,6 +26,16 @@ public class CityService implements IService<City> {
              cityDao.create(connection, city);
              return null;
          });
+    }
+
+    @Override
+    public void update(City entity) throws TransactionInterruptedException {
+
+    }
+
+    @Override
+    public void delete(int id) throws TransactionInterruptedException {
+
     }
 
     @Override

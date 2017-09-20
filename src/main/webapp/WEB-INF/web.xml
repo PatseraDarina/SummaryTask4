@@ -6,8 +6,19 @@
 
     <display-name>Periodicals</display-name>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>showRegisterInfo</welcome-file>
     </welcome-file-list>
+
+    <servlet>
+        <description>Main page</description>
+        <servlet-name> MainPageServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.MainPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name> MainPageServlet</servlet-name>
+        <url-pattern>/mainPage</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <description>Show Register Info</description>
@@ -21,7 +32,61 @@
         <url-pattern>/showRegisterInfo</url-pattern>
     </servlet-mapping>
 
-    <context-param>
+    <servlet>
+        <description>View periodicals</description>
+        <servlet-name>ViewPeriodicalsServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.ViewPeriodicalsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewPeriodicalsServlet</servlet-name>
+        <url-pattern>/viewPeriodicals</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Delete periodicals</description>
+        <servlet-name>DeletePeriodicalsServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.DeletePeriodicalsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeletePeriodicalsServlet</servlet-name>
+        <url-pattern>/deletePeriodicals</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Show category</description>
+        <servlet-name>ShowCategoryServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.ShowCategoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowCategoryServlet</servlet-name>
+        <url-pattern>/addPeriodic</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Add periodicals</description>
+        <servlet-name>AddPeriodicalsServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.AddPeriodicalsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddPeriodicalsServlet</servlet-name>
+        <url-pattern>/addPeriodicals</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>CheckRoleFilter</filter-name>
+        <filter-class>ua.nure.patsera.periodicals.web.controller.filters.CheckRoleFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CheckRoleFilter</filter-name>
+        <url-pattern>/checkRole</url-pattern>
+    </filter-mapping>
+
+<!--    <context-param>
         <param-name>dbUser</param-name>
         <param-value>root</param-value>
     </context-param>
@@ -32,7 +97,7 @@
     <context-param>
         <param-name>dbURL</param-name>
         <param-value>jdbc:mysql://localhost:3306/periodicals</param-value>
-    </context-param>
+    </context-param>-->
 
 
     <resource-ref>

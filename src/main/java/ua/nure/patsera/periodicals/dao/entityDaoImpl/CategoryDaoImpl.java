@@ -65,4 +65,17 @@ public class CategoryDaoImpl extends AbstractDao<Category, Integer> implements I
         return connection.prepareCall(query);
     }
 
+    @Override
+    public Category getCategoryByName(Connection connection, String name) throws SQLException {
+        PreparedStatement preparedStatement = prepareGetCategoryByName(connection, name);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSetTransformation.getDBObject(resultSet);
+    }
+
+    private PreparedStatement prepareGetCategoryByName(Connection connection, String name) throws SQLException {
+        String query = QueryStorage.READ_CATEGORY_BY_NAME;
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, name);
+        return preparedStatement;
+    }
 }

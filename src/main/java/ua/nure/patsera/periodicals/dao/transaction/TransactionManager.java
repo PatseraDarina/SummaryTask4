@@ -34,13 +34,12 @@ public class TransactionManager {
             exceptionMessage = Messages.NO_CONNECTION;
         } catch (SQLException e) {
             exceptionMessage = e.getMessage();
-            LOGGER.error(e.getMessage());
             exceptionMessage = rollback(connection, exceptionMessage);
         } finally {
             try {
                 connection.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                LOGGER.error(e.getMessage());
             }
         }
         throw new TransactionInterruptedException(exceptionMessage);
