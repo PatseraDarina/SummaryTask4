@@ -12,7 +12,7 @@ import java.util.Optional;
 /**
  * Created by Дарина on 12.09.2017.
  */
-public class CityService implements IService<City> {
+public class CityService {
     private final TransactionManager transactionManager;
     private final ICityDao cityDao;
 
@@ -28,17 +28,6 @@ public class CityService implements IService<City> {
          });
     }
 
-    @Override
-    public void update(City entity) throws TransactionInterruptedException {
-
-    }
-
-    @Override
-    public void delete(int id) throws TransactionInterruptedException {
-
-    }
-
-    @Override
     public boolean contains(String name) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
         cityDao.getCityByName(connection, name)) != null;

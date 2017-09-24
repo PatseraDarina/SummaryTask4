@@ -1,6 +1,6 @@
 package ua.nure.patsera.periodicals.bean;
 
-import ua.nure.patsera.periodicals.model.BaseEntity;
+import ua.nure.patsera.periodicals.dao.BaseEntity;
 
 import java.io.Serializable;
 
@@ -18,12 +18,14 @@ public class User extends BaseEntity<Integer> implements Serializable {
     private String password;
     private int idDistrict;
     private int idRole;
+    private double account;
+    private boolean blocked;
 
     public User() {
     }
 
     public User(String firstName, String middleName, String lastName, String phone, int idRole,
-                int flatNumber, String houseNumber, String password, String email, String street, int idDistrict) {
+                int flatNumber, String houseNumber, String password, String email, String street, int idDistrict, boolean blocked) {
         this.street = street;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -35,6 +37,15 @@ public class User extends BaseEntity<Integer> implements Serializable {
         this.password = password;
         this.email = email;
         this.idDistrict = idDistrict;
+        this.blocked = blocked;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
     }
 
     public int getIdRole() {
@@ -128,4 +139,9 @@ public class User extends BaseEntity<Integer> implements Serializable {
         this.email = email;
     }
 
+    public double getAccount() { return account; }
+
+    public void setAccount(double account) {
+        this.account = account;
+    }
 }

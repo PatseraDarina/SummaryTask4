@@ -1,6 +1,6 @@
 package ua.nure.patsera.periodicals.dto;
 
-import ua.nure.patsera.periodicals.model.BaseEntity;
+import ua.nure.patsera.periodicals.dao.BaseEntity;
 
 /**
  * Created by Дарина on 16.09.2017.

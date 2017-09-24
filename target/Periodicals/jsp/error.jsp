@@ -17,8 +17,8 @@
     <title>Error page</title>
 </head>
 <body>
-    <div class="errorMsg">
-        <h1><c:out value="${errorMessage}"/></h1>
-    </div>
+<p><h1><strong>An error occured!</strong></h1></p>
+<p><h4>Something is broken. Please, let us know what you were doing when this error occured.</h4></p>
+<p><h4><c:out value="${errorMessage}"/></h4></p>
 </body>
 </html>

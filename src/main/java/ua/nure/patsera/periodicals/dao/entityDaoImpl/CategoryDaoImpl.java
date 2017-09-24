@@ -1,6 +1,7 @@
 package ua.nure.patsera.periodicals.dao.entityDaoImpl;
 
 import ua.nure.patsera.periodicals.bean.Category;
+import ua.nure.patsera.periodicals.bean.Periodical;
 import ua.nure.patsera.periodicals.dao.AbstractDao;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.ICategoryDao;
 import ua.nure.patsera.periodicals.dao.entityTransformation.ResultSetTransformation;

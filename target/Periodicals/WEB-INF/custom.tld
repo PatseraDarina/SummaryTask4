@@ -1,0 +1,11 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Custom TLD</short-name>
+
+    <tag>
+        <name>Logo</name>
+        <tag-class>ua.nure.patsera.periodicals.web.controller.tags.LogoTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>

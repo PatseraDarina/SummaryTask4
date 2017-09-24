@@ -1,8 +1,12 @@
 package ua.nure.patsera.periodicals.web.controller;
 
 import org.apache.log4j.Logger;
+import ua.nure.patsera.periodicals.bean.User;
+import ua.nure.patsera.periodicals.dto.LoginDto;
 import ua.nure.patsera.periodicals.dto.RegistrationDto;
+import ua.nure.patsera.periodicals.exceptions.AuthorizationException;
 import ua.nure.patsera.periodicals.exceptions.RegistrationException;
+import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 import ua.nure.patsera.periodicals.service.UserService;
 
 import javax.servlet.ServletException;
@@ -29,17 +33,27 @@ public class RegistrationServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(true);
+        User user;
         response.setContentType("text/html");
         request.setCharacterEncoding("UTF-8");
         RegistrationDto registrationDto = getRegistrationDto(request);
         try {
             userService.register(registrationDto);
+            user = userService.login(getLoginDto(request));
+            session.setAttribute(ServletAttributes.USER, user);
+            session.setAttribute(ServletAttributes.USER_ROLE, userService.getUserRole(user.getEmail()));
             session.setAttribute(ServletAttributes.REGISTRATION_DTO, registrationDto);
         } catch (RegistrationException e) {
-            session.setAttribute(ServletAttributes.REGISTRATION_NOT_SUCCESS, e.getMessage());
+            session.setAttribute(ServletAttributes.ERROR_MESSAGE, e.getMessage());
+            LOGGER.warn(e.getMessage());
+        } catch (AuthorizationException e) {
+            session.setAttribute(ServletAttributes.ERROR_MESSAGE, e.getMessage());
+            LOGGER.warn(e.getMessage());
+        } catch (TransactionInterruptedException e) {
+            session.setAttribute(ServletAttributes.ERROR_MESSAGE, e.getMessage());
             LOGGER.warn(e.getMessage());
         }
-        response.sendRedirect(ServletAttributes.JSP_PERCONAL_CABINET);
+        response.sendRedirect(ServletAttributes.JSP_PERSONAL_CABINET);
     }
 
     private RegistrationDto getRegistrationDto(HttpServletRequest request) {
@@ -56,5 +70,12 @@ public class RegistrationServlet extends HttpServlet {
         registrationDto.setPhone(request.getParameter(ServletAttributes.USER_PHONE));
         registrationDto.setStreet(request.getParameter(ServletAttributes.USER_STREET));
         return registrationDto;
+    }
+
+    private LoginDto getLoginDto(HttpServletRequest req) {
+        LoginDto loginDto = new LoginDto();
+        loginDto.setEmail(req.getParameter(ServletAttributes.USER_EMAIL));
+        loginDto.setPassword(req.getParameter(ServletAttributes.USER_PASSWORD));
+        return loginDto;
     }
 }

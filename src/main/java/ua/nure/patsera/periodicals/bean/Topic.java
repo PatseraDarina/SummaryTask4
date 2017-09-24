@@ -1,7 +1,6 @@
 package ua.nure.patsera.periodicals.bean;
 
-import org.apache.log4j.xml.SAXErrorHandler;
-import ua.nure.patsera.periodicals.model.BaseEntity;
+import ua.nure.patsera.periodicals.dao.BaseEntity;
 
 import java.io.Serializable;
 

@@ -1,0 +1,12 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<c:if test="${not empty sessionScope.lang}">
+	<c:set var="lang" value="${sessionScope.lang}" scope="session" />
+</c:if>
+
+<c:if test="${empty sessionScope.lang}">
+	<c:set var="lang" value="en" scope="session" />
+</c:if>
+
+<fmt:setLocale value="${lang}" />
+<fmt:setBundle basename="ui"/>

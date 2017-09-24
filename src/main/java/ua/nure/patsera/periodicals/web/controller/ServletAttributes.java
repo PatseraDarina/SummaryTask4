@@ -6,8 +6,8 @@ package ua.nure.patsera.periodicals.web.controller;
 public class ServletAttributes {
 
     //User
-    public static final String USER_SERVICE = "USERService";
-    public static final String USER = "USER";
+    public static final String USER_SERVICE = "userService";
+    public static final String USER = "user";
     public static final String USER_FIRST_NAME = "firstName";
     public static final String USER_LAST_NAME = "lastName";
     public static final String USER_MIDDLE_NAME = "middleName";
@@ -20,18 +20,22 @@ public class ServletAttributes {
     public static final String USER_STREET = "street";
     public static final String USER_PASSWORD = "password";
     public static final String USER_ROLE = "role";
+    public static final String USER_ACCOUNT = "account";
+    public static final String USERS_LIST = "usersList";
+    public static final String USER_BLOCKED = "blocked";
+    public static final String USER_ID = "userId";
 
 
     public static final String REGISTRATION_DTO = "registrationDTO";
 
     //Periodical
     public static final String PERIODICAL_SERVICE = "periodicalService";
-    public static final String PERIODICAL_PRICE = "pricePeriodical";
-    public static final String PERIODICAL_NAME= "namePeriodical";
-    public static final String PERIODICAL_CATEGORY = "categoryPeriodical";
-    public static final String PERIODICAL_PHOTO = "photoPeriodical";
+    public static final String PERIODICAL_PRICE = "periodicalPrice";
+    public static final String PERIODICAL_NAME= "periodicalName";
+    public static final String PERIODICAL_CATEGORY = "periodicalCategory";
+    public static final String PERIODICAL_PHOTO = "periodicalPhoto";
     public static final String PERIODICAL_LIST = "periodicalList";
-    public static final String PERIODICAL_ID = "idPeriodical";
+    public static final String PERIODICAL_ID = "periodicalId";
 
 
     //District
@@ -46,8 +50,16 @@ public class ServletAttributes {
     public static final String CITY_LIST = "cityList";
 
     //Category
+    public static final String CATEGORY = "category";
     public static final String CATEGORY_SERVICE = "categoryService";
     public static final String CATEGORY_LIST = "categoryList";
+    public static final String CATEGORY_ENTERTAINMENT = "Entertainment";
+    public static final String CATEGORY_HEALTH = "Health";
+    public static final String CATEGORY_TECHNOLOGY = "Technology";
+
+    //Subscription
+    public static final String SUBSCRIPTION_SERVICE = "subscriptionService";
+    public static final String SUBSCRIPTION_LIST = "subscriptionList";
 
     //Login
     public static final String LOGIN_ERROR = "loginError";
@@ -58,20 +70,24 @@ public class ServletAttributes {
     public static final String READER = "reader";
     public static final String ADMIN = "admin";
 
-    //Registration
-    public static final String REGISTRATION_NOT_SUCCESS = "registration was not successful";
+    //Transaction
+    public static final String TRANSACTION_SERVICE = "transactionService";
 
     //JSP
     public static final String JSP_INDEX = "index.jsp";
-    public static final String JSP_PERCONAL_CABINET = "personalCabinet.jsp";
-    public static final String JSP_REGISTER = "jsp/register.jsp";
-    public static final String JSP_ADD_PERIODICALS = "jsp/admin/addPeriodicals.jsp";
     public static final String JSP_VIEW_PERIODICALS = "jsp/admin/viewPeriodicals.jsp";
     public static final String JSP_ERROR_PAGE = "jsp/error.jsp";
+    public static final String JSP_PERIODIC_BY_CATEGORY = "/jsp/periodicByCategory.jsp";
+    public static final String JSP_PERSONAL_CABINET = "/jsp/personalCabinet.jsp";
+    public static final String JSP_VIEW_USERS = "jsp/admin/viewUsers.jsp";
 
     //Servlets
     public static final String SHOW_CATEGORY_SERVLET = "addPeriodic";
     public static final String VIEW_PERIODICAL_SERVLET = "/viewPeriodicals";
+    public static final String PERSONAL_CABINET = "/personalCabinet";
+    public static final String MAIN_PAGE_SERVLET = "/mainPage";
+    public static final String VIEW_BY_CATEGORY_SERVLET = "/viewByCategory";
+
 
     //Filters
     public static final String FILTER_CHECK_ROLE = "checkRole";
@@ -80,5 +96,9 @@ public class ServletAttributes {
     public static final String ERROR_MESSAGE = "errorMessage";
     public static final String ERROR_ADDING = "Data was not be adding. Check fields.";
     public static final String ERROR_SERVER= "Server encountered a mistake. Please, try later.";
+    public static final String ERROR_NO_MONEY = "You don't have enough money. Refill your account";
+    public static final String ERROR_NEED_REGISTER = "You need to register or login to have access for subscribing.";
+    public static final String ERROR_BLOCKED_UDER = "Unfortunatelly you are blocked =(";
+
 
 }

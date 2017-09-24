@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by Дарина on 08.09.2017.
  */
-public class CategoryService implements IService<Category> {
+public class CategoryService {
     private final TransactionManager transactionManager;
 
     private final ICategoryDao categoryDao;
@@ -23,24 +23,12 @@ public class CategoryService implements IService<Category> {
         this.categoryDao = categoryDao;
     }
 
-    @Override
     public void add(Category entity) throws TransactionInterruptedException {
         transactionManager.doTransaction((Operation<Void>) connection ->{
             categoryDao.create(connection, entity);
             return null;});
     }
 
-    @Override
-    public void update(Category entity) throws TransactionInterruptedException {
-
-    }
-
-    @Override
-    public void delete(int id) throws TransactionInterruptedException {
-
-    }
-
-    @Override
     public boolean contains(String name) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
                 categoryDao.getCategoryByName(connection, name)) != null;

@@ -1,5 +1,6 @@
-package ua.nure.patsera.Subscriptions.dao.entityDaoImpl;
+package ua.nure.patsera.periodicals.dao.entityDaoImpl;
 
+import ua.nure.patsera.periodicals.bean.Periodical;
 import ua.nure.patsera.periodicals.bean.Subscription;
 import ua.nure.patsera.periodicals.dao.AbstractDao;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.ISubscriptionDao;
@@ -10,7 +11,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -67,4 +67,18 @@ public class SubscriptionDaoImpl extends AbstractDao<Subscription, Integer> impl
         return connection.prepareStatement(query);
     }
 
+    @Override
+    public Subscription getUserSubscription(Connection connection, int idUser, int idPeriodic) throws SQLException {
+        PreparedStatement preparedStatement = prepareReadSubscriptQuery(connection, idUser, idPeriodic);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        return resultSetTransformation.getDBObject(resultSet);
+    }
+
+    private PreparedStatement prepareReadSubscriptQuery(Connection connection, int idUser, int idPeriodic) throws SQLException {
+        String query = QueryStorage.READ_USER_SUBSCRIPTION;
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, idPeriodic);
+        preparedStatement.setInt(2, idUser);
+        return preparedStatement;
+    }
 }

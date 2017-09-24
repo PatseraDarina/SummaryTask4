@@ -31,8 +31,9 @@ public class SubscriptionTransformation implements ResultSetTransformation<Subsc
 
     private Subscription parseSubscription(ResultSet resultSet) throws SQLException {
         Subscription subscription = new Subscription();
-        subscription.setIdPeriodical(resultSet.getInt(1));
-        subscription.setIdReader(resultSet.getInt(2));
+        subscription.setId(resultSet.getInt(1));
+        subscription.setIdPeriodical(resultSet.getInt(2));
+        subscription.setIdReader(resultSet.getInt(3));
         return subscription;
     }
 }

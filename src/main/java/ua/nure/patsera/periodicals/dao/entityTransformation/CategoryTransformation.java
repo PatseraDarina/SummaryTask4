@@ -1,7 +1,6 @@
 package ua.nure.patsera.periodicals.dao.entityTransformation;
 
 import ua.nure.patsera.periodicals.bean.Category;
-import ua.nure.patsera.periodicals.model.BaseEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

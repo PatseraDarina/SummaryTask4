@@ -1,8 +1,8 @@
 package ua.nure.patsera.periodicals.dao.entityDaoInterface;
 
+import ua.nure.patsera.periodicals.bean.Periodical;
 import ua.nure.patsera.periodicals.dao.GenericDao;
-import ua.nure.patsera.periodicals.model.BaseEntity;
-import ua.nure.patsera.periodicals.model.IBaseEntity;
+import ua.nure.patsera.periodicals.dao.BaseEntity;
 
 import java.sql.Connection;
 import java.sql.SQLException;

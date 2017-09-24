@@ -12,10 +12,12 @@ import ua.nure.patsera.periodicals.exceptions.RegistrationException;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 import ua.nure.patsera.periodicals.validation.Validator;
 
+import java.util.List;
+
 /**
  * Created by Дарина on 11.09.2017.
  */
-public class UserService implements IService<User> {
+public class UserService {
 
     private final TransactionManager transactionManager;
     private final IUserDao userDao;
@@ -28,38 +30,34 @@ public class UserService implements IService<User> {
         this.districtService = districtService;
     }
 
-    @Override
     public void add(User user) throws TransactionInterruptedException {
          transactionManager.doTransaction((Operation<Void>) connection -> {
              userDao.create(connection, user);
          return null;});
     }
 
-    @Override
-    public void update(User entity) throws TransactionInterruptedException {
-
-    }
-
-    @Override
-    public void delete(int id) throws TransactionInterruptedException {
-
-    }
-
-
-    @Override
     public boolean contains(String name) throws TransactionInterruptedException {
-      //  return getByLogin(name) != null;
-        return true;
+        return getByLogin(name) != null;
     }
 
-    public User getByLogin(String email, String password) throws TransactionInterruptedException {
+    public User getByLogin(String email) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
-                userDao.getByLoginData(connection, email, password));
+                userDao.getByLoginData(connection, email));
+    }
+
+    public User getByLoginPswd(String email, String password) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+                userDao.getByLoginPswd(connection, email, password));
+    }
+
+    public User getUser(int id) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+        userDao.read(connection, id));
     }
 
     public User login(LoginDto loginDto) throws AuthorizationException, TransactionInterruptedException {
         checkLoginData(loginDto);
-            User user = getByLogin(loginDto.getEmail(), loginDto.getPassword());
+            User user = getByLoginPswd(loginDto.getEmail(), loginDto.getPassword());
             if (user == null) {
                 throw new AuthorizationException(Messages.INVALID_LOGIN);
             }
@@ -106,11 +104,27 @@ public class UserService implements IService<User> {
                 add(newUser);
             }
         } catch (TransactionInterruptedException e) {
-            throw new RegistrationException(Messages.TRY_AGAIN);
+            throw new RegistrationException(Messages.REGISTRATION_NOT_SUCCESS);
         }
     }
     
     public String getUserRole(String email) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection -> userDao.getUserRoleByEmail(connection, email));
+    }
+
+    public void updateUser(User user) throws TransactionInterruptedException {
+        transactionManager.doTransaction((Operation<Void>) connection -> {
+            userDao.update(connection, user);
+            return null;});
+    }
+
+    public void setAccount(int id, double money) throws TransactionInterruptedException {
+        transactionManager.doTransaction(connection ->{
+        userDao.setMoney(connection, id, money);
+        return null;});
+    }
+
+    public List<RegistrationDto> getAllUserDto() throws TransactionInterruptedException {
+        return transactionManager.doTransaction(userDao::getRegistrationDto);
     }
 }

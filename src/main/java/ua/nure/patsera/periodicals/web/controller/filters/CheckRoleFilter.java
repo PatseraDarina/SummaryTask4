@@ -31,19 +31,6 @@ public class CheckRoleFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        User user = (User) request.getSession().getAttribute(ServletAttributes.USER);
-        if (user == null) {
-            response.sendRedirect(ServletAttributes.JSP_INDEX);
-        } else {
-            switch ((String) request.getSession().getAttribute(ServletAttributes.USER_ROLE)) {
-                case ServletAttributes.ADMIN :
-                    response.sendRedirect(ServletAttributes.JSP_ADD_PERIODICALS);
-                    break;
-                case ServletAttributes.READER :
-                    response.sendRedirect(ServletAttributes.JSP_PERCONAL_CABINET);
-                    break;
-            }
-           chain.doFilter(req, resp);
-        }
+
     }
 }

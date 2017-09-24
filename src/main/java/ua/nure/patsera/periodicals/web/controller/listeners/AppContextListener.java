@@ -26,13 +26,6 @@ import javax.sql.DataSource;
 @WebListener
 public class AppContextListener implements ServletContextListener {
 
-    /**
-     * Tomcat will look up the specified resource
-     * name{@code name = "jdbc/periodicals"} and
-     * inject an actual implementation
-     * when it discovers this annotation.
-     */
-    //@Resource(name = "jdbc/periodicals")
     private DataSource dataSource;
 
     private static final Logger LOGGER = Logger.getLogger(AppContextListener.class);
@@ -61,6 +54,8 @@ public class AppContextListener implements ServletContextListener {
         initReaderService();
         initCityService();
         initPeriodicalService();
+        initSubscriptionService();
+        initTransactionService();
     }
 
     private void initReaderService() {
@@ -68,8 +63,8 @@ public class AppContextListener implements ServletContextListener {
         IDistrictDao districtDao = new DistrictDaoImpl(districtTransformation);
         DistrictService districtService = new DistrictService(transactionManager, districtDao);
         ResultSetTransformation<User> readerTransformation = new UserTransformation();
-        IUserDao readerDao = new UserDaoImpl(readerTransformation);
-        UserService userService = new UserService(transactionManager, readerDao, districtService);
+        IUserDao userDao = new UserDaoImpl(readerTransformation);
+        UserService userService = new UserService(transactionManager, userDao, districtService);
         servletContext.setAttribute(ServletAttributes.USER_SERVICE, userService);
         servletContext.setAttribute(ServletAttributes.DISTRICT_SERVICE, districtService);
     }
@@ -91,6 +86,24 @@ public class AppContextListener implements ServletContextListener {
         PeriodicalService periodicalService = new PeriodicalService(transactionManager, periodicalsDao, categoryService);
         servletContext.setAttribute(ServletAttributes.PERIODICAL_SERVICE, periodicalService);
     }
+
+    private void initSubscriptionService() {
+        ResultSetTransformation<Subscription> subscriptionTransformation = new SubscriptionTransformation();
+        ISubscriptionDao subscriptionDao = new SubscriptionDaoImpl(subscriptionTransformation);
+        SubscriptionService subscriptionService = new SubscriptionService(transactionManager, subscriptionDao);
+        servletContext.setAttribute(ServletAttributes.SUBSCRIPTION_SERVICE, subscriptionService);
+    }
+
+    private void initTransactionService() {
+        ResultSetTransformation<Subscription> subscriptionTransformation = new SubscriptionTransformation();
+        ISubscriptionDao subscriptionDao = new SubscriptionDaoImpl(subscriptionTransformation);
+        ResultSetTransformation<User> readerTransformation = new UserTransformation();
+        IUserDao userDao = new UserDaoImpl(readerTransformation);
+        ITransactionDao transactionDao = new TransactionDaoImpl(userDao, subscriptionDao);
+        TransactionService transactionService = new TransactionService(transactionManager, transactionDao);
+        servletContext.setAttribute(ServletAttributes.TRANSACTION_SERVICE, transactionService);
+    }
+
 
     /**
      * This method is invoked when the Servlet Context

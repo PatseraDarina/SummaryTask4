@@ -13,4 +13,6 @@ import java.util.List;
 public interface IPeriodicalsDao extends IBaseEntityDao<Periodical, Integer> {
     Periodical getPeriodicalByName(Connection connection, String name) throws SQLException;
     List<PeriodicalDto> getPeriodicalDto(Connection connection) throws SQLException;
+    List<PeriodicalDto> getPeriodicalByCategory(Connection connection, String category) throws SQLException;
+    List<PeriodicalDto> getPeriodicalByReaderId(Connection connection, int id) throws SQLException;
 }

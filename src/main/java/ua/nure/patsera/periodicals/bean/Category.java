@@ -1,7 +1,6 @@
 package ua.nure.patsera.periodicals.bean;
 
-import com.sun.corba.se.spi.activation.BadServerDefinition;
-import ua.nure.patsera.periodicals.model.BaseEntity;
+import ua.nure.patsera.periodicals.dao.BaseEntity;
 
 import java.io.Serializable;
 

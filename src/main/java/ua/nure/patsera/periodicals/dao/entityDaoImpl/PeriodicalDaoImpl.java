@@ -39,6 +39,23 @@ public class PeriodicalDaoImpl extends AbstractDao<Periodical, Integer> implemen
         return list;
     }
 
+    public List<PeriodicalDto> getPeriodicalByCategory(Connection connection, String category) throws SQLException {
+        List<PeriodicalDto> list = new ArrayList<>();
+        PreparedStatement preparedStatement = prepareReadPeriodByCategoryQuery(connection, category);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            list.add(parsePeriodicalsDto(resultSet));
+        }
+        return list;
+    }
+
+    private PreparedStatement prepareReadPeriodByCategoryQuery(Connection connection, String category) throws SQLException {
+        String query = QueryStorage.READ_PERIODICALS_BY_CATEGORY;
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, category);
+        return preparedStatement;
+    }
+
     private PeriodicalDto parsePeriodicalsDto(ResultSet resultSet) throws SQLException {
         PeriodicalDto periodical = new PeriodicalDto();
         periodical.setCategory(resultSet.getString(1));
@@ -109,6 +126,24 @@ public class PeriodicalDaoImpl extends AbstractDao<Periodical, Integer> implemen
         String query = QueryStorage.READ_PERIODICALS_BY_NAME;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, name);
+        return preparedStatement;
+    }
+
+    @Override
+    public List<PeriodicalDto> getPeriodicalByReaderId(Connection connection, int id) throws SQLException {
+        List<PeriodicalDto> list = new ArrayList<>();
+        PreparedStatement preparedStatement = prepareGetPeriodicalByReader(connection, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            list.add(parsePeriodicalsDto(resultSet));
+        }
+        return list;
+    }
+
+    private PreparedStatement prepareGetPeriodicalByReader(Connection connection, int id) throws SQLException {
+        String query = QueryStorage.READ_ALL_PERIODICALS_BY_READER;
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
         return preparedStatement;
     }
 }

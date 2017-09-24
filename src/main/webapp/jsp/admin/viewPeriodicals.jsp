@@ -20,9 +20,9 @@
 <body>
 
 <div class="vladmaxi-top">
-    <a href="/addPeriodic">Add periodicals</a>
+    <a href="viewUsers">View users</a>
     <span class="right">
-        <a href="showRegisterInfo">
+        <a href="mainPage">
                 <strong>Main page</strong>
             </a>
         </span>
@@ -101,23 +101,23 @@
             <div class="modal-body">
                 <form action="/updatePeriodicals" id="edit-form" method="post">
                 <div class="form-group">
-                    <input class="form-control " type="hidden" name="idPeriodical" id="idP" required="required">
+                    <input class="form-control " type="hidden" name="periodicalId" id="idP" required="required">
                 </div>
                 <div class="form-group">
-                    <select class="form-control" id="categoryP" name="categoryPeriodical">
+                    <select class="form-control" id="categoryP" name="periodicalCategory">
                         <c:forEach  var="category" items="${categoryList}">
                             <option> ${category.name}</option>
                         </c:forEach>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input class="form-control " type="text" name="namePeriodical" id="nameP" required="required" >
+                    <input class="form-control " type="text" name="periodicalName" id="nameP" required="required" >
                 </div>
                 <div class="form-group">
-                    <input class="form-control " type="number" min="1"  step="0.001" name="pricePeriodical" id="priceP" required="required" placeholder="Price">
+                    <input class="form-control " type="number" min="1"  step="0.001" name="periodicalPrice" id="priceP" required="required" placeholder="Price">
                 </div>
                 <div class="form-group">
-                    <p>Photo <input type="file" accept="image/jpeg" name="photoPeriodical" id="photoP"  required="required" />
+                    <p>Photo <input type="file" accept="image/jpeg" name="periodicalPhoto" id="photoP"  required="required" />
                 </div>
                     <div class="modal-footer ">
                         <input type="submit" class="btn btn-success glyphicon glyphicon-upload"  aria-hidden="true" value="Update" form="edit-form" style="width: 100%;"/>
@@ -140,9 +140,10 @@
             <div class="modal-body">
                 <form action="/deletePeriodicals" method="post" id="delete-form">
                     <div class="form-group">
-                        <input class="form-control " type="hidden" name="idPeriodical" id="idPDel" required="required">
+                        <input class="form-control " type="hidden" name="periodicalId" id="idPDel" required="required">
                     </div>
                     <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+
                     <div class="modal-footer ">
                         <button type="submit" class="btn btn-success" form="delete-form"><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
@@ -165,26 +166,26 @@
             <div class="modal-body">
                 <form action="/addPeriodicals" id="add-form" method="post">
                     <div class="form-group">
-                        <input class="form-control " type="hidden" name="idPeriodical" required="required">
+                        <input class="form-control " type="hidden" name="periodicalId" required="required">
                     </div>
                     <div class="form-group">
-                        <select class="form-control" name="categoryPeriodical">
+                        <select class="form-control" name="periodicalCategory">
                             <c:forEach  var="category" items="${categoryList}">
                                 <option> ${category.name}</option>
                             </c:forEach>
                         </select>
                     </div>
                     <div class="form-group">
-                        <input class="form-control " type="text" name="namePeriodical" required="required" placeholder="Name">
+                        <input class="form-control " type="text" name="periodicalName" required="required" placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <input class="form-control " type="number" min="1"  step="0.001" name="pricePeriodical" required="required" placeholder="Price">
+                        <input class="form-control " type="number" min="1"  step="0.001" name="periodicalPrice" required="required" placeholder="Price">
                     </div>
                     <div class="form-group">
-                        <p>Photo <input type="file" accept="image/jpeg" name="photoPeriodical"  required="required" />
+                        <p>Photo <input type="file" accept="image/jpeg" name="periodicalPhoto"  required="required" />
                     </div>
                     <div class="modal-footer ">
-                        <input type="submit" class="btn-primary "aria-hidden="true" value="ADD" form="add-form" style="width: 100%;"/>
+                        <input type="submit" class="btn-primary" aria-hidden="true" value="ADD" form="add-form" style="width: 100%;"/>
                     </div>
                 </form>
             </div>
@@ -193,56 +194,6 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-
-    <table border="2">
-        <thead>
-            <tr>
-                <td>Category</td>
-                <td>Name</td>
-                <td>Price</td>
-                <td>Photo</td>
-            </tr>
-        </thead>
-        <tbody>
-            <c:forEach  var="periodical" items="${periodicalList}">
-                <tr>
-                    <td>
-                        <c:out value="${periodical.category}"/>
-                    </td>
-                    <td>
-                        <c:out value="${periodical.name}"/>
-                    </td>
-                    <td>
-                        <c:out value="${periodical.price}"/>
-                    </td>
-                    <td>
-                        <c:out value="${periodical.photo}"/>
-                    </td>
-                </tr>
-            </c:forEach>
-        </tbody>
-    </table>
-    <p><a href="/showCategory">Add periodicals</a></p>
-
-<script>
-    $(document).ready(function($){
-        {
-            $("#mytable #checkall").click(function () {
-                if ($("#mytable #checkall").is(':checked')) {
-                    $("#mytable input[type=checkbox]").each(function () {
-                        $(this).prop("checked", true);
-                    });
-
-                } else {
-                    $("#mytable input[type=checkbox]").each(function () {
-                        $(this).prop("checked", false);
-                    });
-                }
-            });
-
-            $("[data-toggle=tooltip]").tooltip();
-        }});
-</script>
 
 <script>
     var table = document.getElementById('mytable');

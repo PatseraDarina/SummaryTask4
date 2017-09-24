@@ -11,4 +11,7 @@ public class Messages {
     public static final String NO_CONNECTION = "No connection";
     public static final String INVALID_ADRESS_DATA = "Invalid data of adress";
     public static final String TRY_AGAIN = "Try again, please";
+    public static final String REGISTRATION_NOT_SUCCESS = "Registration was not successful.";
+    public static final String SUBSCRIBE_EXIST = "You have already subscribed on this periodicals";
+
 }

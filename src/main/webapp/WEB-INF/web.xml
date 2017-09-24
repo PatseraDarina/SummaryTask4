@@ -6,36 +6,30 @@
 
     <display-name>Periodicals</display-name>
     <welcome-file-list>
-        <welcome-file>showRegisterInfo</welcome-file>
+        <welcome-file>mainPage</welcome-file>
     </welcome-file-list>
 
-    <servlet>
-        <description>Main page</description>
-        <servlet-name> MainPageServlet</servlet-name>
-        <servlet-class>ua.nure.patsera.periodicals.web.controller.MainPageServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name> MainPageServlet</servlet-name>
-        <url-pattern>/mainPage</url-pattern>
-    </servlet-mapping>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/jsp/error.jsp</location>
+    </error-page>
 
     <servlet>
-        <description>Show Register Info</description>
-        <servlet-name>ShowRegisterInfoServlet</servlet-name>
-        <servlet-class>ua.nure.patsera.periodicals.web.controller.ShowRegisterInfoServlet</servlet-class>
+        <description>Show Info for main page</description>
+        <servlet-name>MainPageInfoServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.MainPageInfoServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>ShowRegisterInfoServlet</servlet-name>
-        <url-pattern>/showRegisterInfo</url-pattern>
+        <servlet-name>MainPageInfoServlet</servlet-name>
+        <url-pattern>/mainPage</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <description>View periodicals</description>
         <servlet-name>ViewPeriodicalsServlet</servlet-name>
-        <servlet-class>ua.nure.patsera.periodicals.web.controller.ViewPeriodicalsServlet</servlet-class>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.adminServlets.ViewPeriodicalsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -44,9 +38,19 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <description>Delete periodicals</description>
         <servlet-name>DeletePeriodicalsServlet</servlet-name>
-        <servlet-class>ua.nure.patsera.periodicals.web.controller.DeletePeriodicalsServlet</servlet-class>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.adminServlets.DeletePeriodicalsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -68,12 +72,66 @@
     <servlet>
         <description>Add periodicals</description>
         <servlet-name>AddPeriodicalsServlet</servlet-name>
-        <servlet-class>ua.nure.patsera.periodicals.web.controller.AddPeriodicalsServlet</servlet-class>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.adminServlets.AddPeriodicalsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>AddPeriodicalsServlet</servlet-name>
         <url-pattern>/addPeriodicals</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Delete subscribe</description>
+        <servlet-name>DeleteSubscribeServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.DeleteSubscribeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteSubscribeServlet</servlet-name>
+        <url-pattern>/deleteSubscribe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>View users</description>
+        <servlet-name>ViewUsersServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.adminServlets.ViewUsersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewUsersServlet</servlet-name>
+        <url-pattern>/viewUsers</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description>Block users</description>
+        <servlet-name>BlockedUserServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.adminServlets.BlockedUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BlockedUserServlet</servlet-name>
+        <url-pattern>/blockUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewPeriodicByCategoryServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.ViewPeriodicByCategoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewPeriodicByCategoryServlet</servlet-name>
+        <url-pattern>/viewByCategory</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSubscribeServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.AddSubscribeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddSubscribeServlet</servlet-name>
+        <url-pattern>/addSubscribes</url-pattern>
     </servlet-mapping>
 
     <filter>

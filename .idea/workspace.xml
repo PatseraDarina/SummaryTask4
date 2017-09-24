@@ -2,137 +2,206 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5575f2d8-f309-45ab-b162-7e3536bc7f42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/SubscriptionDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowCategoryServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/add_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/view_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/check_all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.easing.1.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.sticky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/addPeriodicals.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/check.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IReaderDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalsNameTransformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/PeriodicalsName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Reader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/ReaderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsNameDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IReaderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalsNameTransformation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/ReaderTransformation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/ReaderService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/jsp/error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/jsp/register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/PeriodicalsName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Reader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/ReaderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsNameDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IReaderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalsNameTransformation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/ReaderTransformation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/CategoryService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/CityService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/DistrictService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/ReaderService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals.war" afterPath="$PROJECT_DIR$/target/Periodicals.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_15_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ITransactionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/exceptions/SubscriptionException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/SubscriptionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/TransactionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddSubscribeServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeleteSubscribeServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/PersonalCabinetServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/PutMoneyServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/BlockedUserServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/ViewUsersServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ui_en.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ui_ru.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/custom.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/header.jspf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/locale.jspf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/taglib.jspf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/changeIcons.tag" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewUsers.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/periodicByCategory.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/personalCabinet.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/IService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/addPeriodicals.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/check.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/personalCabinet.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/Subscriptions/dao/entityDaoImpl/SubscriptionDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/model/BaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/model/IBaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/IService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/MainPageServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/admin/addPeriodicals.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/check.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/personalCabinet.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/Subscriptions/dao/entityDaoImpl/SubscriptionDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/model/BaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/model/IBaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/IService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/MainPageServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Category.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Category.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/City.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/City.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Delivery.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Delivery.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/District.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/District.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodical.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodical.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Role.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Role.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Subscription.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Subscription.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Topic.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Topic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/User.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/AbstractDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/AbstractDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/GenericDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/GenericDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/CategoryTransformation.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/CategoryTransformation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dto/RegistrationDto.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dto/RegistrationDto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/exceptions/Messages.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/exceptions/Messages.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/CategoryService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/CategoryService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/CityService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/CityService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/DistrictService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/DistrictService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/IService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/IService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/validation/Validator.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/validation/Validator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/UserService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/LoginServlet.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/LogoutServlet.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/LogoutServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Category.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Category.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/City.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/City.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Delivery.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Delivery.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/District.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/District.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodical.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodical.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Role.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Role.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Subscription.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Subscription.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Topic.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Topic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/User.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/AbstractDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/AbstractDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/GenericDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/GenericDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/CategoryTransformation.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/CategoryTransformation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dto/RegistrationDto.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dto/RegistrationDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/IService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/IService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/validation/Validator.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/validation/Validator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/exceptions/Messages.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/exceptions/Messages.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/CategoryService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/CategoryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/CityService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/CityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/DistrictService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/DistrictService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/LogoutServlet.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/LogoutServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/periodicals_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/periodicals_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/context.xml" afterPath="$PROJECT_DIR$/conf/context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periodicals.iml" afterPath="$PROJECT_DIR$/periodicals.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Category.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/City.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/City.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Delivery.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Delivery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/District.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/District.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodical.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodical.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodicity.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodicity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/PeriodicityType.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/PeriodicityType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Subscription.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Subscription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Topic.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Topic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/AbstractDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/AbstractDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/GenericDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/GenericDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/ResultSetTransformation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/ResultSetTransformation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/SubscriptionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/SubscriptionDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IDeliveryDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IDeliveryDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/CategoryTransformation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/CategoryTransformation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/RegistrationDto.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/RegistrationDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/exceptions/Messages.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/exceptions/Messages.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CategoryService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CityService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CityService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/DistrictService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/DistrictService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/IService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/IService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/validation/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/validation/Validator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LogoutServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/db.properties" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/db.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/css/style.css" afterPath="$PROJECT_DIR$/target/Periodicals/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/index.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db.properties" afterPath="$PROJECT_DIR$/target/classes/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/PeriodicalsName.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodical.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Reader.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/ReaderDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsNameDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/ReaderTransformation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/ReaderService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/admin/viewPeriodicals.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/admin/viewPeriodicals.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/error.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/error.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/model/BaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/BaseEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/model/IBaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/IBaseEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/AddPeriodicalsServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/DeletePeriodicalsServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageInfoServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/UpdatePeriodicalsServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/ViewPeriodicalsServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,31 +223,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UpdatePeriodicalsServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.java">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="143">
+              <caret line="116" column="49" lean-forward="false" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/view_style.css">
+      <file leaf-file-name="UserTransformation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="390">
+              <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewPeriodicalsServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.java">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            <state relative-caret-position="338">
+              <caret line="42" column="106" lean-forward="false" selection-start-line="42" selection-start-column="106" selection-end-line="42" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -187,18 +256,28 @@
       <file leaf-file-name="ServletAttributes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="73" column="74" lean-forward="false" selection-start-line="73" selection-start-column="74" selection-end-line="73" selection-end-column="74" />
+            <state relative-caret-position="254">
+              <caret line="100" column="49" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -207,41 +286,38 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="236" column="30" lean-forward="true" selection-start-line="236" selection-start-column="30" selection-end-line="236" selection-end-column="30" />
+            <state relative-caret-position="96">
+              <caret line="28" column="111" lean-forward="false" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPeriodicalsServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.java">
+      <file leaf-file-name="header.jspf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/header.jspf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+            <state relative-caret-position="309">
+              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewPeriodicals.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp">
+      <file leaf-file-name="changeIcons.tag" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/changeIcons.tag">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-              <folding>
-                <element signature="n#style#0;n#th#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeletePeriodicalsServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.java">
+      <file leaf-file-name="MainPageInfoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageInfoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -252,20 +328,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Enum" />
+        <option value="CSS File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>City</find>
-      <find>Periodical</find>
-      <find>sh</find>
-      <find>shop</find>
       <find>main</find>
       <find>mainmenu-area</find>
       <find>float</find>
@@ -273,7 +346,6 @@
       <find>navbar</find>
       <find>mainm</find>
       <find>carousel</find>
-      <find>thumbnail</find>
       <find>Add a</find>
       <find>img</find>
       <find>font</find>
@@ -288,14 +360,23 @@
       <find>readerDao</find>
       <find>style</find>
       <find>h3</find>
+      <find>color</find>
+      <find>thu</find>
+      <find>thumbnail</find>
+      <find>clear</find>
+      <find>Category</find>
+      <find>acco</find>
+      <find>btn</find>
+      <find>ex</find>
+      <find>IDNAME</find>
     </findStrings>
     <replaceStrings>
       <replace>Periodicals</replace>
       <replace>Periodical</replace>
-      <replace>Subscription</replace>
       <replace>add-form</replace>
       <replace>USER</replace>
       <replace>userDao</replace>
+      <replace>Subscription</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -309,57 +390,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/viewPeriodicals.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Subscription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/SubscriptionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/responsive.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/regist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/validation/Validator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/RegistrationDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/ReaderService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/check.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/check.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/add_style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/check_all.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/addPeriodicals.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/IService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/DistrictService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/PersonalCabinetServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/PutMoneyServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/changeIcons.tag" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/model/IBaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/IBaseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowCategoryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/view_style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/DistrictService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/PeriodicalTransformation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IBaseEntityDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/DistrictDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CityDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/TranssactionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/periodicByCategory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ITransactionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/TransactionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddSubscribeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/personalCabinet.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/SubscriptionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/SubscriptionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeleteSubscribeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/ViewUsersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/RegistrationDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewUsers.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/BlockedUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/header.jspf" />
       </list>
     </option>
   </component>
@@ -412,7 +493,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -509,6 +589,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periodicals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jspf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periodicals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -540,32 +680,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -669,196 +783,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entityDaoImpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -869,23 +796,26 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ua.nure.patsera.periodicals.enum" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\img" />
-      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp" />
-      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\css" />
-      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\jsp" />
+      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\WEB-INF" />
       <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\css" />
       <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp" />
       <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\resources" />
-      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\resources" />
+      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\jsp\jspf" />
+      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\img" />
+      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp" />
+      <recent name="D:\Java\IdeaProjects\SummaryTask4\src\main\webapp\css" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.nure.patsera.periodicals.enum" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1676,49 +1606,56 @@
       <workItem from="1505847068094" duration="15629000" />
       <workItem from="1505899929865" duration="11196000" />
       <workItem from="1505929995929" duration="13429000" />
+      <workItem from="1505981489609" duration="6307000" />
+      <workItem from="1506016374961" duration="15492000" />
+      <workItem from="1506034523866" duration="2478000" />
+      <workItem from="1506058062696" duration="40567000" />
+      <workItem from="1506146908434" duration="16197000" />
+      <workItem from="1506172340352" duration="20829000" />
+      <workItem from="1506202009919" duration="14895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187891000" />
+    <option name="totallyTimeSpent" value="304656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.5060698" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23676248" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23676248" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24899058" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24879615" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24879615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29787233" sideWeight="0.4939302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26350245" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25531915" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16717096" sideWeight="0.45171848" order="0" side_tool="false" content_ui="combo" x="172" y="153" width="178" height="410" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22163388" sideWeight="0.5482815" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23146747" sideWeight="0.40963855" order="0" side_tool="false" content_ui="combo" x="172" y="153" width="178" height="410" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17927383" sideWeight="0.5903614" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1727,9 +1664,9 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.5060698" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23676248" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23676248" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1738,21 +1675,21 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24899058" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24879615" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260228" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29787233" sideWeight="0.4939302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26350245" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25531915" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31260228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.45171848" order="0" side_tool="false" content_ui="combo" x="172" y="153" width="178" height="410" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22163388" sideWeight="0.5482815" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17927383" sideWeight="0.40963855" order="0" side_tool="false" content_ui="combo" x="172" y="153" width="178" height="410" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17927383" sideWeight="0.5903614" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1768,13 +1705,37 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddSubscribeServlet.java</url>
+          <line>36</line>
           <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeleteSubscribeServlet.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/ViewUsersServlet.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/BlockedUserServlet.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="95" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1783,400 +1744,419 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/LoginDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/PersonalCabinetServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#397#398#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/RegistrationDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LogoutServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/CategoryDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/Role.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/FilterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_131/src.zip!/java/util/EventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/ServletContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="81" column="53" lean-forward="true" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="68" column="52" lean-forward="true" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+        <state relative-caret-position="134">
+          <caret line="60" column="55" lean-forward="false" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="87" lean-forward="false" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/Operation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_131/src.zip!/java/sql/ResultSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ICategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="175" column="12" lean-forward="false" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodical.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="374">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/AddPeriodicalsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="313" column="4" lean-forward="false" selection-start-line="313" selection-start-column="4" selection-end-line="313" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowRegisterInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="56" column="79" lean-forward="false" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="625" column="16" lean-forward="false" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Hierarchy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="355" column="0" lean-forward="false" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="1043" column="0" lean-forward="false" selection-start-line="1043" selection-start-column="0" selection-end-line="1043" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#901#902#0" expanded="false" />
-            <element signature="e#937#938#0" expanded="false" />
-            <element signature="e#988#989#0" expanded="false" />
-            <element signature="e#1019#1020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="46" column="109" lean-forward="false" selection-start-line="46" selection-start-column="109" selection-end-line="46" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_131/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="137" column="22" lean-forward="false" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/ResultSetTransformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/model/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/IService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        <state relative-caret-position="267">
+          <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/AbstractDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="331">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="-89">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/DistrictService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/Operation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ISubscriptionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CityService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="6256">
+          <caret line="368" column="15" lean-forward="false" selection-start-line="368" selection-start-column="15" selection-end-line="368" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CategoryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/SubscriptionDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="181">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/addPeriodicals.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/SubscriptionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="51" column="6" lean-forward="true" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        <state relative-caret-position="182">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/view_style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/SubscriptionTransformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="298">
+          <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ShowCategoryServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="32" column="75" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+        <state relative-caret-position="187">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="236" column="30" lean-forward="true" selection-start-line="236" selection-start-column="30" selection-end-line="236" selection-end-column="30" />
+        <state relative-caret-position="55">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicalsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/TransactionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="203">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ITransactionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="73" column="74" lean-forward="false" selection-start-line="73" selection-start-column="74" selection-end-line="73" selection-end-column="74" />
+        <state relative-caret-position="220">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddPeriodicalsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        <state relative-caret-position="135">
+          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/UpdatePeriodicalsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/personalCabinet.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="-337">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/AddSubscribeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="735">
+          <caret line="99" column="5" lean-forward="false" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeletePeriodicalsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/DeleteSubscribeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="184">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/ViewPeriodicalsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="121" column="38" lean-forward="false" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="64" column="75" lean-forward="false" selection-start-line="64" selection-start-column="75" selection-end-line="64" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/transaction/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        <state relative-caret-position="-368">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/RegistrationDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#th#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/javax/el/BeanELResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="259" column="0" lean-forward="false" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/periodicByCategory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="40" column="74" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/viewUsers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="56" column="70" lean-forward="true" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/ViewUsersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/adminServlets/BlockedUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="10" column="206" lean-forward="false" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/changeIcons.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/LoginDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="116" column="49" lean-forward="false" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/UserTransformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="100" column="49" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="42" column="106" lean-forward="false" selection-start-line="42" selection-start-column="106" selection-end-line="42" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="28" column="111" lean-forward="false" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/header.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

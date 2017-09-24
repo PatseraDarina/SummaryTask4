@@ -14,7 +14,7 @@ import java.util.Optional;
 /**
  * Created by Дарина on 16.09.2017.
  */
-public class PeriodicalService implements IService<Periodical> {
+public class PeriodicalService {
     private Logger LOGGER = Logger.getLogger(PeriodicalService.class);
     private final TransactionManager transactionManager;
     private final IPeriodicalsDao periodicalDao;
@@ -26,7 +26,6 @@ public class PeriodicalService implements IService<Periodical> {
         this.categoryService = categoryService;
     }
 
-    @Override
     public void add(Periodical periodical) throws TransactionInterruptedException {
         transactionManager.doTransaction((Operation<Void>) connection -> {
             periodicalDao.create(connection, periodical);
@@ -34,7 +33,6 @@ public class PeriodicalService implements IService<Periodical> {
         });
     }
 
-    @Override
     public void delete(int id) throws TransactionInterruptedException {
         transactionManager.doTransaction((Operation<Void>)connection -> {
             periodicalDao.delete(connection, id);
@@ -42,12 +40,16 @@ public class PeriodicalService implements IService<Periodical> {
         });
     }
 
-    @Override
     public void update(Periodical periodical) throws TransactionInterruptedException {
         transactionManager.doTransaction((Operation<Void>) connection -> {
              periodicalDao.update(connection, periodical);
              return null;
         });
+    }
+
+    public Periodical getPeriodicById(int id) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+        periodicalDao.read(connection, id));
     }
 
     public void addPeriodicals(PeriodicalDto periodicalDto) throws TransactionInterruptedException {
@@ -68,7 +70,6 @@ public class PeriodicalService implements IService<Periodical> {
         return periodical;
     }
 
-    @Override
     public boolean contains(String name) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
                 periodicalDao.getPeriodicalByName(connection, name)) != null;
@@ -79,16 +80,18 @@ public class PeriodicalService implements IService<Periodical> {
                 periodicalDao.getPeriodicalByName(connection, name)));
     }
 
-    public List<Periodical> getAllPeriodical() {
-        try {
-            return transactionManager.doTransaction(periodicalDao::readAll);
-        } catch (TransactionInterruptedException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 
     public List<PeriodicalDto> getAllPeriodicalDto() throws TransactionInterruptedException {
         return transactionManager.doTransaction(periodicalDao::getPeriodicalDto);
+    }
+
+    public List<PeriodicalDto> getPeriodicalDtoByCategory(String category) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+            periodicalDao.getPeriodicalByCategory(connection, category));
+    }
+
+    public List<PeriodicalDto> getPeriodicalDtoByReader(int id) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+        periodicalDao.getPeriodicalByReaderId(connection, id));
     }
 }

@@ -1,8 +1,6 @@
 package ua.nure.patsera.periodicals.dao;
 
-import org.apache.log4j.Logger;
 import ua.nure.patsera.periodicals.dao.entityTransformation.ResultSetTransformation;
-import ua.nure.patsera.periodicals.model.BaseEntity;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

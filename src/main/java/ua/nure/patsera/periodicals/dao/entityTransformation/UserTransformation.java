@@ -42,6 +42,9 @@ public class UserTransformation implements ResultSetTransformation<User> {
         user.setEmail(resultSet.getString(9));
         user.setIdDistrict(resultSet.getInt(10));
         user.setStreet(resultSet.getString(11));
+        user.setIdRole(resultSet.getInt(12));
+        user.setAccount(resultSet.getDouble(13));
+        user.setBlocked(resultSet.getBoolean(14));
         return user;
     }
 }

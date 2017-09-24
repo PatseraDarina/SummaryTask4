@@ -4,6 +4,7 @@ package ua.nure.patsera.periodicals.dto;
  * Created by Дарина on 11.09.2017.
  */
 public class RegistrationDto {
+    private int id;
     private String firstName;
     private String middleName;
     private String lastName;
@@ -15,8 +16,25 @@ public class RegistrationDto {
     private String district;
     private String password;
     private String email;
+    private boolean isBlocked;
 
     public RegistrationDto() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isBlocked() {
+        return isBlocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        isBlocked = blocked;
     }
 
     public String getFirstName() {

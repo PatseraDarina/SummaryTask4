@@ -1,7 +1,5 @@
 package ua.nure.patsera.periodicals.dao;
 
-import ua.nure.patsera.periodicals.model.BaseEntity;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 

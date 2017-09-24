@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Дарина on 12.09.2017.
  */
-public class DistrictService implements IService<District> {
+public class DistrictService {
     TransactionManager transactionManager;
     IDistrictDao districtDao;
 
@@ -20,24 +20,12 @@ public class DistrictService implements IService<District> {
         this.districtDao = districtDao;
     }
 
-    @Override
     public void add(District entity) throws TransactionInterruptedException {
          transactionManager.doTransaction((Operation<Void>) connection ->{
             districtDao.create(connection, entity);
         return null;});
     }
 
-    @Override
-    public void update(District entity) throws TransactionInterruptedException {
-
-    }
-
-    @Override
-    public void delete(int id) throws TransactionInterruptedException {
-
-    }
-
-    @Override
     public boolean contains(String name) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
                 districtDao.getDistrictByName(connection, name)) != null;
