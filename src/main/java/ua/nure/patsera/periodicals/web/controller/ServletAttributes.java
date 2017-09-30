@@ -100,5 +100,12 @@ public class ServletAttributes {
     public static final String ERROR_NEED_REGISTER = "You need to register or login to have access for subscribing.";
     public static final String ERROR_BLOCKED_UDER = "Unfortunatelly you are blocked =(";
 
+    //Filters
+    public static final String SORT = "sort";
+    public static final String ISALL = "isAll";
 
+    //Localization
+    public static final String LANGUAGE = "language";
+
+    public static final String CAPTCHA_SERVICE = "captchaService";
 }

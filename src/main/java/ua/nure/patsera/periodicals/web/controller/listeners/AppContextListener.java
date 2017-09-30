@@ -10,6 +10,8 @@ import ua.nure.patsera.periodicals.dao.entityDaoImpl.*;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.*;
 import ua.nure.patsera.periodicals.dao.entityTransformation.*;
 import ua.nure.patsera.periodicals.dao.transaction.TransactionManager;
+import ua.nure.patsera.periodicals.repository.CaptchaRepository;
+import ua.nure.patsera.periodicals.repository.captcha.impl.HashMapCaptchaRepository;
 import ua.nure.patsera.periodicals.service.*;
 import ua.nure.patsera.periodicals.web.controller.ServletAttributes;
 import ua.nure.patsera.periodicals.dao.utility.*;
@@ -56,6 +58,13 @@ public class AppContextListener implements ServletContextListener {
         initPeriodicalService();
         initSubscriptionService();
         initTransactionService();
+        initCaptchaService();
+    }
+
+    private void initCaptchaService() {
+        CaptchaRepository captchaRepository = new HashMapCaptchaRepository();
+        CaptchaService captchaService = new CaptchaService(captchaRepository);
+        servletContext.setAttribute(ServletAttributes.CAPTCHA_SERVICE, captchaService);
     }
 
     private void initReaderService() {

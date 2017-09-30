@@ -13,9 +13,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Дарина on 08.09.2017.
- */
 public class UserDaoImpl extends AbstractDao<User, Integer> implements IUserDao {
 
     public UserDaoImpl(ResultSetTransformation<User> resultSetTransformation) {

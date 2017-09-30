@@ -15,4 +15,6 @@ public interface IPeriodicalsDao extends IBaseEntityDao<Periodical, Integer> {
     List<PeriodicalDto> getPeriodicalDto(Connection connection) throws SQLException;
     List<PeriodicalDto> getPeriodicalByCategory(Connection connection, String category) throws SQLException;
     List<PeriodicalDto> getPeriodicalByReaderId(Connection connection, int id) throws SQLException;
+    List<PeriodicalDto> getSortPeriodicals(Connection connection, String orderBy, String sortType) throws SQLException;
+    List<PeriodicalDto> getPeriodicalDtoByName(Connection connection, String name) throws SQLException;
 }

@@ -14,6 +14,11 @@
         <location>/jsp/error.jsp</location>
     </error-page>
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/error_404.jsp </location>
+    </error-page>
+
     <servlet>
         <description>Show Info for main page</description>
         <servlet-name>MainPageInfoServlet</servlet-name>
@@ -104,6 +109,39 @@
 
 
     <servlet>
+        <description>Localization</description>
+        <servlet-name>LocalizationServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.LocalizationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LocalizationServlet</servlet-name>
+        <url-pattern>/language</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Captcha</description>
+        <servlet-name>CaptchaServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.CaptchaServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CaptchaServlet</servlet-name>
+        <url-pattern>/captcha</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Search periodical</description>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <description>Block users</description>
         <servlet-name>BlockedUserServlet</servlet-name>
         <servlet-class>ua.nure.patsera.periodicals.web.controller.adminServlets.BlockedUserServlet</servlet-class>
@@ -112,6 +150,17 @@
     <servlet-mapping>
         <servlet-name>BlockedUserServlet</servlet-name>
         <url-pattern>/blockUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Sorting periodicals</description>
+        <servlet-name>SortingServlet</servlet-name>
+        <servlet-class>ua.nure.patsera.periodicals.web.controller.SortingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SortingServlet</servlet-name>
+        <url-pattern>/sorting</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -141,7 +190,8 @@
 
     <filter-mapping>
         <filter-name>CheckRoleFilter</filter-name>
-        <url-pattern>/checkRole</url-pattern>
+        <url-pattern>/viewPeriodicals</url-pattern>
+        <url-pattern>/viewUsers</url-pattern>
     </filter-mapping>
 
 <!--    <context-param>
@@ -156,7 +206,6 @@
         <param-name>dbURL</param-name>
         <param-value>jdbc:mysql://localhost:3306/periodicals</param-value>
     </context-param>-->
-
 
     <resource-ref>
         <description>DB Connection</description>

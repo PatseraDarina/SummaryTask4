@@ -1,5 +1,6 @@
 package ua.nure.patsera.periodicals.dao.entityDaoImpl;
 
+import com.sun.scenario.effect.impl.prism.ps.PPSBlend_REDPeer;
 import ua.nure.patsera.periodicals.bean.Periodical;
 import ua.nure.patsera.periodicals.dao.AbstractDao;
 import ua.nure.patsera.periodicals.dao.entityDaoInterface.IPeriodicalsDao;
@@ -29,16 +30,6 @@ public class PeriodicalDaoImpl extends AbstractDao<Periodical, Integer> implemen
         return resultSetTransformation.getDBObject(resultSet);
     }
 
-    public List<PeriodicalDto> getPeriodicalDto(Connection connection) throws SQLException {
-        List<PeriodicalDto> list = new ArrayList<>();
-        PreparedStatement preparedStatement = prepareReadPeriodicalDtoQuery(connection);
-        ResultSet resultSet = preparedStatement.executeQuery();
-        while (resultSet.next()) {
-            list.add(parsePeriodicalsDto(resultSet));
-        }
-        return list;
-    }
-
     public List<PeriodicalDto> getPeriodicalByCategory(Connection connection, String category) throws SQLException {
         List<PeriodicalDto> list = new ArrayList<>();
         PreparedStatement preparedStatement = prepareReadPeriodByCategoryQuery(connection, category);
@@ -54,6 +45,27 @@ public class PeriodicalDaoImpl extends AbstractDao<Periodical, Integer> implemen
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, category);
         return preparedStatement;
+    }
+
+    public List<PeriodicalDto> getPeriodicalDto(Connection connection) throws SQLException {
+        List<PeriodicalDto> list = new ArrayList<>();
+        PreparedStatement preparedStatement = prepareReadPeriodicalDtoQuery(connection);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            list.add(parsePeriodicalsDtoCount(resultSet));
+        }
+        return list;
+    }
+
+    private PeriodicalDto parsePeriodicalsDtoCount(ResultSet resultSet) throws SQLException {
+        PeriodicalDto periodical = new PeriodicalDto();
+        periodical.setCategory(resultSet.getString(1));
+        periodical.setName(resultSet.getString(2));
+        periodical.setPrice(resultSet.getDouble(3));
+        periodical.setPhoto(resultSet.getString(4));
+        periodical.setId(resultSet.getInt(5));
+        periodical.setCount(resultSet.getInt(6));
+        return periodical;
     }
 
     private PeriodicalDto parsePeriodicalsDto(ResultSet resultSet) throws SQLException {
@@ -144,6 +156,50 @@ public class PeriodicalDaoImpl extends AbstractDao<Periodical, Integer> implemen
         String query = QueryStorage.READ_ALL_PERIODICALS_BY_READER;
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setInt(1, id);
+        return preparedStatement;
+    }
+
+    @Override
+    public List<PeriodicalDto> getSortPeriodicals(Connection connection, String orderBy, String sortType) throws SQLException {
+        List<PeriodicalDto> list = new ArrayList<>();
+        PreparedStatement preparedStatement = prepareSortPeriodical(connection, orderBy, sortType);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            list.add(parsePeriodicalsDto(resultSet));
+        }
+        return list;
+    }
+
+    @Override
+    public List<PeriodicalDto> getPeriodicalDtoByName(Connection connection, String name) throws SQLException {
+        List<PeriodicalDto> list = new ArrayList<>();
+        PreparedStatement preparedStatement = prepareGetByNamePeriodical(connection, name);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while(resultSet.next()) {
+            list.add(parsePeriodicalsDto(resultSet));
+        }
+        return list;
+    }
+
+    private PreparedStatement prepareGetByNamePeriodical(Connection connection, String name) throws SQLException {
+        String query = QueryStorage.READ_ALL_PERIODICAL_BY_NAME;
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, "%" + name + "%");
+        return preparedStatement;
+    }
+
+    private PreparedStatement prepareSortPeriodical(Connection connection, String orderBy, String sortType) throws SQLException {
+        String query = QueryStorage.READ_ALL_PERIODICALS_DTO;
+        if (orderBy.equals("ASC") && sortType.equals("name")) {
+            query = QueryStorage.READ_SORT_NAME_ASC_PERIODICALS;
+        } else if (orderBy.equals("DESC") && sortType.equals("name")) {
+            query = QueryStorage.READ_SORT_NAME_DESC_PERIODICALS;
+        } else if (orderBy.equals("ASC") && sortType.equals("price")) {
+            query = QueryStorage.READ_SORT_PRICE_ASC_PERIODICALS;
+        } else if (orderBy.equals("DESC") && sortType.equals("price")) {
+            query = QueryStorage.READ_SORT_PRICE_DESC_PERIODICALS;
+        }
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
         return preparedStatement;
     }
 }

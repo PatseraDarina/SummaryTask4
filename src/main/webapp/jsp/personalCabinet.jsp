@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="/WEB-INF/jspf/localization.jspf"%>
 
 <html>
 <head>
@@ -17,15 +18,13 @@
 <%@ include file="/WEB-INF/jspf/header.jspf"%>
 
 
-<div class="account-form">
-<form action="/putMoney" id="money-form" method="post">
-        <label>${sessionScope.user.account}</label>
-    <div class="form-group">
-        <input class="form-control " type="number" min="1"  step="0.001" name="account" required="required">
-    </div>
-        <input type="submit" class="btn-primary" aria-hidden="true" value="ADD" form="money-form"/>
+<form action="/putMoney" id="money-form" method="post" style="padding-left: 20px">
+        <label style="margin-top:80px; font-size: large">${sessionScope.user.account}
+            <input class="form-control " type="number" min="1"  step="0.001" name="account" required="required">
+        </label>
+        <input type="submit" class="btn" aria-hidden="true" value="<fmt:message key="label.add"/>" form="money-form"/>
 </form>
-</div>
+
 
 <div class="row text-center">
     <c:forEach var="periodic" items="${sessionScope.subscriptionList}">
@@ -37,7 +36,7 @@
                     <p>${periodic.category}</p>
                     <p>${periodic.price} грн.</p>
                     <a href="/deleteSubscribe?periodicalId=${periodic.id}&periodicalPrice=${periodic.price}">
-                        <input type="submit" class="btn" value="Unsubscribes" />
+                        <input type="submit" class="btn" value="<fmt:message key="label.unsubscribes"/>" />
                     </a>
                 </div>
             </div>

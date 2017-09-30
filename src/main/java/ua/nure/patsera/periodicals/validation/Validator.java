@@ -6,7 +6,7 @@ package ua.nure.patsera.periodicals.validation;
 public class Validator {
     private static final String STRING_REGEX = "^[A-Z][a-z]+";
     private static final String EMAIL_REGEX = "^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\\.([a-zA-Z])+([a-zA-Z])+$";
-    private static final String PASSWORD_REGEX = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\[@#$%^&+=])(?=\\S+$).{8,}$";
+    private static final String PASSWORD_REGEX = "^(?=.*\\d)(?=.*[a-zA-Z]).{6,8}$";
     private static final String PHONE_REGEX = "^[0][0-9]{9}";
 
     public static boolean isValidName (String string) {

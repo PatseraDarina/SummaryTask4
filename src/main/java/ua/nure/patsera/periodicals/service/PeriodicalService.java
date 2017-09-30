@@ -8,6 +8,8 @@ import ua.nure.patsera.periodicals.dao.transaction.TransactionManager;
 import ua.nure.patsera.periodicals.dto.PeriodicalDto;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,7 +17,6 @@ import java.util.Optional;
  * Created by Дарина on 16.09.2017.
  */
 public class PeriodicalService {
-    private Logger LOGGER = Logger.getLogger(PeriodicalService.class);
     private final TransactionManager transactionManager;
     private final IPeriodicalsDao periodicalDao;
     private final CategoryService categoryService;
@@ -93,5 +94,16 @@ public class PeriodicalService {
     public List<PeriodicalDto> getPeriodicalDtoByReader(int id) throws TransactionInterruptedException {
         return transactionManager.doTransaction(connection ->
         periodicalDao.getPeriodicalByReaderId(connection, id));
+    }
+
+    public List<PeriodicalDto> sort(String orderBy, String sortType) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+        periodicalDao.getSortPeriodicals(connection, orderBy, sortType));
+    }
+
+    public List<PeriodicalDto> getPeriodicalDtoByName(String name) throws TransactionInterruptedException {
+        return transactionManager.doTransaction(connection ->
+            periodicalDao.getPeriodicalDtoByName(connection, name)
+        );
     }
 }

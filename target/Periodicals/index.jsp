@@ -6,11 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ include file="/WEB-INF/jspf/taglib.jspf"%>
-<%@ include file="/WEB-INF/jspf/locale.jspf"%>
+<%@ include file="/WEB-INF/jspf/localization.jspf"%>
 <%@ taglib prefix = "cst" uri = "/WEB-INF/custom.tld"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="${language}">
 <head>
     <title>Periodika</title>
     <meta charset="utf-8">

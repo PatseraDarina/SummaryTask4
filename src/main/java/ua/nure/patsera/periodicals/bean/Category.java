@@ -4,9 +4,7 @@ import ua.nure.patsera.periodicals.dao.BaseEntity;
 
 import java.io.Serializable;
 
-/**
- * Created by Дарина on 05.09.2017.
- */
+
 public class Category extends BaseEntity<Integer> implements Serializable {
     private String name;
 

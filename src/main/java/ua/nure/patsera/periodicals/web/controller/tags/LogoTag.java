@@ -1,8 +1,7 @@
 package ua.nure.patsera.periodicals.web.controller.tags;
 
-import javax.servlet.jsp.*;
+import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
-import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 

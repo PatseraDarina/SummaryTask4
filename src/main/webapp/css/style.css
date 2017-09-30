@@ -350,6 +350,10 @@ button.submit:active {
     color: #000;
 }
 
+.filters {
+    margin-top: 100px;
+}
+
 /*======= Error page ======*/
 .errorMsg {
     font-style: oblique;

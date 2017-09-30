@@ -10,6 +10,15 @@ public class PeriodicalDto extends BaseEntity<Integer> {
     private String category;
     private double price;
     private String photo;
+    private int count;
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     public String getName() {
         return name;

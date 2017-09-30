@@ -12,11 +12,10 @@ import ua.nure.patsera.periodicals.exceptions.RegistrationException;
 import ua.nure.patsera.periodicals.exceptions.TransactionInterruptedException;
 import ua.nure.patsera.periodicals.validation.Validator;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Created by Дарина on 11.09.2017.
- */
 public class UserService {
 
     private final TransactionManager transactionManager;
@@ -80,7 +79,8 @@ public class UserService {
                 Validator.isValidPassword(registrationDto.getPassword()) &&
                 Validator.isValidName(registrationDto.getFirstName()) &&
                 Validator.isValidName(registrationDto.getLastName()) &&
-                Validator.isValidName(registrationDto.getMiddleName())) {
+                Validator.isValidName(registrationDto.getMiddleName()) &&
+                Validator.isValidPhone(registrationDto.getPhone())) {
             throw new RegistrationException(Messages.INVALID_REGISTRATION_DATA);
         }
     }

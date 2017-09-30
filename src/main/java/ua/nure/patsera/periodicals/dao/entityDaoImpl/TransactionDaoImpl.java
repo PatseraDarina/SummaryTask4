@@ -10,9 +10,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-/**
- * Created by Дарина on 23.09.2017.
- */
 public class TransactionDaoImpl implements ITransactionDao {
     private IUserDao userDao;
     private ISubscriptionDao subscriptionDao;

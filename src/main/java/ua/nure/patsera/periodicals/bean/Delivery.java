@@ -5,9 +5,6 @@ import ua.nure.patsera.periodicals.dao.BaseEntity;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by Дарина on 05.09.2017.
- */
 public class Delivery extends BaseEntity<Integer> implements Serializable {
     private int idReader;
     private int idSubscription;

@@ -7,9 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix = "flt" tagdir = "/WEB-INF/tags"%>
+<%@ include file="/WEB-INF/jspf/localization.jspf"%>
 
 <html>
-<head>
+<head lang="${language}">
     <title>Category</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +24,8 @@
 <body>
 
 <%@ include file="/WEB-INF/jspf/header.jspf"%>
+
+<flt:filter isAll="${requestScope.isAll}"/>
 
 <c:if test="${not empty sessionScope.errorMessage}">
     <div class="alert alert-warning text-center" style="margin-top: 50px" role="alert">${sessionScope.errorMessage}</div>
@@ -38,7 +42,7 @@
                 <p>${periodical.category}</p>
                 <p>${periodical.price} грн.</p>
                 <a href="/addSubscribes?periodicalId=${periodical.id}&periodicalName=${periodical.name}&periodicalPhoto=${periodical.photo}&periodicalCategory=${periodical.category}&periodicalPrice=${periodical.price}">
-                    <input type="submit" class="btn" value="Subscribes" />
+                    <input type="submit" class="btn" value="<fmt:message key="label.subscribes"/>" />
                 </a>
 
             </div>

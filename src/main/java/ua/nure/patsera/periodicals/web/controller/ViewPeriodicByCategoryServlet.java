@@ -42,6 +42,7 @@ public class ViewPeriodicByCategoryServlet extends HttpServlet {
                     break;
                 default:
                     periodicalList = periodicalService.getAllPeriodicalDto();
+                    request.setAttribute(ServletAttributes.ISALL, true);
             }
             request.setAttribute(ServletAttributes.PERIODICAL_LIST, periodicalList);
             request.getRequestDispatcher(ServletAttributes.JSP_PERIODIC_BY_CATEGORY).forward(request, response);
