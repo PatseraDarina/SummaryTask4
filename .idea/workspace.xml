@@ -2,147 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5575f2d8-f309-45ab-b162-7e3536bc7f42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Captcha.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/repository/CaptchaRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/repository/captcha/impl/HashMapCaptchaRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/CaptchaService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/CaptchaServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/LocalizationServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/SearchServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/SortingServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/localization.jspf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/filter.tag" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error_404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/bean/UserTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/validation/ValidatorTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_15_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Topic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/ITopicDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityTransformation/TopicTransformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/locale.jspf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Topic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ITopicDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityTransformation/TopicTransformation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/jspf/locale.jspf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/lib/annotations-15.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Periodicals/img/chip.jpg.crdownload" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Topic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/ITopicDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityTransformation/TopicTransformation.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals.war" afterPath="$PROJECT_DIR$/target/Periodicals.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Category.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Category.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/City.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/City.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Delivery.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Delivery.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/District.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/District.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodical.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodical.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Role.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Subscription.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/Subscription.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/User.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/bean/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/utility/ConnectionPool.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/utility/ConnectionPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/UserService.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/validation/Validator.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/validation/Validator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.class" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Category.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Category.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/City.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/City.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Delivery.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Delivery.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/District.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/District.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodical.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodical.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Periodicity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/PeriodicityType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Role.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Subscription.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/Subscription.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/User.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/bean/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/utility/ConnectionPool.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/utility/ConnectionPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dao/utility/QueryStorage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/dto/PeriodicalDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/PeriodicalService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/validation/Validator.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/validation/Validator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ServletAttributes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/periodicals_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/periodicals_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/periodicals_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/periodicals_war_exploded.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/bean/UserTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImplTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periodicals.iml" afterPath="$PROJECT_DIR$/periodicals.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Category.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/City.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/City.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Delivery.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Delivery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/District.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/District.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodical.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodical.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodicity.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Periodicity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/PeriodicityType.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/PeriodicityType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Subscription.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/Subscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/IBaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/IBaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/PeriodicalDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/TransactionDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/entityDaoInterface/IPeriodicalsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/ConnectionPool.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/ConnectionPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dto/PeriodicalDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/PeriodicalService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/validation/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/validation/Validator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ServletAttributes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/ViewPeriodicByCategoryServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/filters/CheckRoleFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/listeners/AppContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/tags/LogoTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ui_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/ui_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ui_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/ui_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/header.jspf" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/header.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/changeIcons.tag" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/changeIcons.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewPeriodicals.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewUsers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/viewUsers.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/periodicByCategory.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/periodicByCategory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/personalCabinet.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/personalCabinet.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ui_en.properties" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ui_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ui_ru.properties" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/classes/ui_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/jspf/header.jspf" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/jspf/header.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/tags/changeIcons.tag" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/tags/changeIcons.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/Periodicals/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/css/style.css" afterPath="$PROJECT_DIR$/target/Periodicals/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/index.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/admin/viewPeriodicals.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/admin/viewPeriodicals.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/admin/viewUsers.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/admin/viewUsers.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/error.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/periodicByCategory.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/periodicByCategory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Periodicals/jsp/personalCabinet.jsp" afterPath="$PROJECT_DIR$/target/Periodicals/jsp/personalCabinet.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ui_en.properties" afterPath="$PROJECT_DIR$/target/classes/ui_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ui_ru.properties" afterPath="$PROJECT_DIR$/target/classes/ui_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -216,9 +78,11 @@
       <file leaf-file-name="MainPageInfoServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageInfoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-              <folding />
+            <state relative-caret-position="442">
+              <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,7 +92,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,28 +102,8 @@
       <file leaf-file-name="QueryStorage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="969">
               <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/bean/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/dao/entityDaoImpl/UserDaoImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -266,7 +112,7 @@
       <file leaf-file-name="ValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/validation/ValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-381">
+            <state relative-caret-position="-159">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
@@ -467,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -480,487 +327,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adminServlets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="periodicals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1797,7 +1165,8 @@
       <workItem from="1506302001645" duration="15770000" />
       <workItem from="1506323458676" duration="10844000" />
       <workItem from="1506348987653" duration="419000" />
-      <workItem from="1506765697014" duration="2070000" />
+      <workItem from="1506765697014" duration="2577000" />
+      <workItem from="1507887948338" duration="150000" />
     </task>
     <servers />
   </component>
@@ -1816,7 +1185,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371993000" />
+    <option name="totallyTimeSpent" value="372650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1835,15 +1204,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4939302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536825" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49394855" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23827533" sideWeight="0.39247313" order="0" side_tool="false" content_ui="combo" x="172" y="153" width="178" height="410" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.39247313" order="0" side_tool="false" content_ui="combo" x="172" y="153" width="178" height="410" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25189108" sideWeight="0.6075269" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1851,6 +1219,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536825" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -1983,9 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1998,13 +1364,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ui_en.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms.rnc">
@@ -2023,13 +1389,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ui_ru.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/error.jsp">
@@ -2052,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2060,7 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="72" column="101" lean-forward="true" selection-start-line="72" selection-start-column="101" selection-end-line="72" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2068,9 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding>
-            <element signature="e#2986#2987#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2108,7 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2181,7 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2196,7 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2232,7 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2240,9 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2250,15 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#677#678#0" expanded="false" />
-            <element signature="e#734#735#0" expanded="false" />
-            <element signature="e#773#774#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2282,9 +1627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2326,9 +1668,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/web/controller/MainPageInfoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="41" column="62" lean-forward="false" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2336,13 +1680,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/patsera/periodicals/dao/utility/QueryStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="969">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
@@ -2366,7 +1712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/nure/patsera/periodicals/validation/ValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
+        <state relative-caret-position="-159">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
